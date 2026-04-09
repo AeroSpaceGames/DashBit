@@ -1,0 +1,432 @@
+{
+  "0": {
+	"Character": "MusicMan",
+	"ES": "Hablando del rey de roma",
+	"EN": "Speak of the devil"
+  },
+  "1": {
+	"Character": "MusicMan",
+	"ES": "Vaya, estás aquí. No pensé verte [wave]otra vez",
+	"EN": "Wow, you here. I didn't I'd see you [wave]again"
+  },
+  "2": {
+	"Character": "MusicMan",
+	"ES": "Será mejor que compres algo que me guste",
+	"EN": "You'd better buy something I like"
+  },
+  "3": {
+	"Character": "MusicMan",
+	"ES": "Espero tener buenas ventas hoy, entiendes?",
+	"EN": "I gotta have good sales today, okay?"
+  },
+  "4": {
+	"Character": "MusicMan",
+	"ES": "Mi música es increíble, [color=#fc2c97]TODOS[/color] deberian escucharla. [shake level=5]JAJAJAJA",
+	"EN": "My music is amazing, [color=#fc2c97]EVERYONE[/color] should listen to it. [shake level=5]HAHAHAHA"
+  },
+  "5": {
+	"Character": "MusicMan",
+	"ES": "Nunca podrás aburrirme, mejor compra algo",
+	"EN": "You'll never bore me, you'd better buy something"
+  },
+  "6": {
+	"Character": "MusicMan",
+	"ES": "El desierto es [wave]taaaaan[/wave] caliente",
+	"EN": "The desert is [wave]soooo[/wave] hot"
+  },
+  "7": {
+	"Character": "MusicMan",
+	"ES": "No creo que un mortal como tú pueda jugar [color=#fc2c97][pulse]DashCore",
+	"EN": "I don't think a mortal like you can play [color=#fc2c97][pulse]DashCore"
+  },
+  "8": {
+	"Character": "MusicMan",
+	"ES": "No tengo oídos pero las ondas de sonido atraviesan mi cuerpo!",
+	"EN": "I got no ears but sound waves pass right through my body!"
+  },
+  "9": {
+	"Character": "MusicMan",
+	"ES": "El logo de SmartWatch no hace referencia a su nombre",
+	"EN": "The SmartWatch icon isnt a Smartwatch at all"
+  },
+  "10": {
+	"Character": "MusicMan",
+	"ES": "A la fiesta de los peores, faltaste [color=red]TÚ[/color]. [shake level=5]JAJAJAJA",
+	"EN": "[color=red]YOU[/color] missed the party of the worst players. [shake level=5]HAHAHAHA"
+  },
+  "11": {
+	"Character": "MusicMan",
+	"ES": "Si logras conseguir [color=#fc2c97]1005[/color] en pro te doy un regalito",
+	"EN": "If you manage to get [color=#fc2c97]1005[/color] in pro, I'll give you a little gifty"
+  },
+  "12": {
+	"Character": "MusicMan",
+	"ES": "Yo no tengo faltas ortográficas, es todo parte de mi [rainbow][wave]ESTILO![/wave][/rainbow] [shake level=5]JAJAJAJA",
+	"EN": "No spelling mistakes from myself, it's all part of my [rainbow][wave]STYLE![/wave][/rainbow] [shake level=5]HAHAHAHA"
+  },
+  "13": {
+	"Character": "MusicMan",
+	"ES": "Quieres saber mi nombre? No es común pero no tiene ni gracia",
+	"EN": "Do you wanna know my name? It's not common, but it'snt funny either."
+  },
+  "14": {
+	"Character": "MusicMan",
+	"ES": "Un pequeño error puede hacer que pierdas [color=red]TODA[/color] la partida",
+	"EN": "One small mistake and its [color=red]GAME OVER"
+  },
+  "15": {
+	"Character": "MusicMan",
+	"ES": "Las mejores recompensas se encuentran en lo más [color=#fc2c97]PROFUNDO![/color]",
+	"EN": "In the [color=#fc2c97]DEEPEST[/color] depths is the jackpot"
+  },
+  "16": {
+	"Character": "MusicMan",
+	"ES": "El agua es muy [color=red]peligrosa[/color], y podrías undirte",
+	"EN": "Water is very dangerous. One slip-up and you're sunk"
+  },
+  "17": {
+	"Character": "MusicMan",
+	"ES": "Las bolas de nieve pueden hacerce tan grandes que te [color=red]TRAGARÍAN!",
+	"EN": "Snowballs can get so big they could [color=red]SWALLOW[/color] you."
+  },
+  "18": {
+	"Character": "MusicMan",
+	"ES": "Incluso sin oídos tengo mejor gusto que [color=red]TÚ",
+	"EN": "I don’t even have ears and my musical taste is still better than [color=red]YOURS"
+  },
+  "19": {
+	"Character": "MusicMan",
+	"ES": "Tanto dinero tienes? Seguro lo robaste todo",
+	"EN": "How you have that much money? You must have stolen it all"
+  },
+  "20": {
+	"Character": "MusicMan",
+	"ES": "Dame ya mi dinero, dámelo, dámelo!",
+	"EN": "Give me my money, give it to me, give it to me!"
+  },
+  "21": {
+	"Character": "MusicMan",
+	"ES": "Tus gustos son extraños. Mientras me pagues no me importa",
+	"EN": "Your tastes are strange. As long as you pay me, I don't care"
+  },
+  "22": {
+	"Character": "MusicMan",
+	"ES": "Esta canción es todo lo que necesitas para perder con estilo",
+	"EN": "This song is all you need to lose with style"
+  },
+  "23": {
+	"Character": "MusicMan",
+	"ES": "Creo que las cajas moradas dan más canciones que las otras...",
+	"EN": "I think the purple boxes give more songs than the others..."
+  },
+  "24": {
+	"Character": "MusicMan",
+	"ES": "ohh, me gusta como suenan esas monedas",
+	"EN": "Oh, I like the sound of those coins"
+  },
+  "25": {
+	"Character": "MusicMan",
+	"ES": "Una compra sabia considerando tu nivel",
+	"EN": "A wise purchase considering your level"
+  },
+  "26": {
+	"Character": "MusicMan",
+	"ES": "Cuado tienes planeado comprar el resto?",
+	"EN": "When do you plan to buy the rest?"
+  },
+  "27": {
+	"Character": "MusicMan",
+	"ES": "Este negocio parece muy rentable",
+	"EN": "This business seems profitable as heck"
+  },
+  "28": {
+	"Character": "MusicMan",
+	"ES": "Ya casi me alcanza para el Iphone 22X Pro Max Mega Ultra",
+	"EN": "I'm almost able to afford the iPhone 22X Pro Max Mega Ultra"
+  },
+  "29": {
+	"Character": "MusicMan",
+	"ES": "[color=red][shake]PERDEDOR",
+	"EN": "[color=red][shake]LOSER"
+  },
+  "30": {
+	"Character": "MusicMan",
+	"ES": "[color=red][shake]POBRE",
+	"EN": "[color=red][shake]POOR"
+  },
+  "31": {
+	"Character": "MusicMan",
+	"ES": "[color=red][shake]INDIGNO",
+	"EN": "[color=red][shake]UNWORTHY"
+  },
+  "32": {
+	"Character": "MusicMan",
+	"ES": "[color=red][shake]PECADOR",
+	"EN": "[color=red][shake]SINNER"
+  },
+  "33": {
+	"Character": "MusicMan",
+	"ES": "A [color=#09c9af]Oxxie[/color] no le gusta que vengas",
+	"EN": "[color=#09c9af]Oxxie[/color] doesn't like it when you come"
+  },
+  "34": {
+	"Character": "MusicMan",
+	"ES": "Regalame dinero, lo [color=red]NECESITO",
+	"EN": "Give me money, I [color=red]NEED[/color] it"
+  },
+  "35": {
+	"Character": "MusicMan",
+	"ES": "Eres muy similar a [color=#fc2c97]ÉL[/color]. [shake level=5]JAJAJAJA",
+	"EN": "You're very similar to [color=#fc2c97]HIM[/color]. [shake level=5]HAHAHAHA"
+  },
+  "36": {
+	"Character": "MusicMan",
+	"ES": "[color=#fc2c97]\"1005\"[/color]",
+	"EN": "[color=#fc2c97]\"1005\"[/color]"
+  },
+  "37": {
+	"Character": "MusicMan",
+	"ES": "El color [color=#09c9af] #09c9af [/color] es muy prejuicioso, no crees?",
+	"EN": "The color [color=#09c9af]#09c9af[/color] is very prejudiced, dont ya think?"
+  },
+  "38": {
+	"Character": "ShopMan",
+	"ES": "¡Ojalá puedas comprar la skin que tanto quieres!",
+	"EN": "I hope you can buy the skin you want so much!"
+  },
+  "39": {
+	"Character": "ShopMan",
+	"ES": "[wave]Bienvenido![/wave] ¿Te gusta algo de lo que ves?",
+	"EN": "[wave]Welcome![/wave] Do you like anything you see?"
+  },
+  "40": {
+	"Character": "ShopMan",
+	"ES": "¡Qué bueno volver a verte! ¿Vienes a ver qué hay?",
+	"EN": "It's great to see you again! Want to see what's on?"
+  },
+  "41": {
+	"Character": "ShopMan",
+	"ES": "¡Puedes comprar todo lo que ves!",
+	"EN": "You can buy everything you see!"
+  },
+  "42": {
+	"Character": "ShopMan",
+	"ES": "Hacer nuevas skins es [wave]dificil[/wave], debo tener en cuenta la mecánica de invertido.",
+	"EN": "Making new skins is [wave]difficult,[/wave] I must take into account the inverted mechanic."
+  },
+  "43": {
+	"Character": "ShopMan",
+	"ES": "Me llamo Horus, como un [color=#fc2c97]dios[/color] mitológico.",
+	"EN": "My name is Horus, like a mythological [color=#fc2c97]god[/color]."
+  },
+  "44": {
+	"Character": "ShopMan",
+	"ES": "Me gusta el [color=yellow]dinero!",
+	"EN": "I like [color=yellow]money!"
+  },
+  "45": {
+	"Character": "ShopMan",
+	"ES": "¿Podrás completar todas las secciones? ¡Es mucho [color=yellow]dinero!",
+	"EN": "Can you complete all the sections? It's a lot of [color=yellow]money!"
+  },
+  "46": {
+	"Character": "ShopMan",
+	"ES": "El color azul es mi color favorito.",
+	"EN": "Blue is my favorite color."
+  },
+  "47": {
+	"Character": "ShopMan",
+	"ES": "No me molesta hablar, pero podrías comprar algo.",
+	"EN": "I don't mind talking, but you could buy something."
+  },
+  "48": {
+	"Character": "ShopMan",
+	"ES": "Intento no ser como el compositor.",
+	"EN": "I try not to be like the composer."
+  },
+  "49": {
+	"Character": "ShopMan",
+	"ES": "Verde y morado, ¡unos colores muy reconocibles en superhéroes!",
+	"EN": "Green and purple, such recognizable colors for superheroes!"
+  },
+  "50": {
+	"Character": "ShopMan",
+	"ES": "La skin que parece una criatura de Minecraft no lo es por temas de copyright.",
+	"EN": "The Creeper skin isn't a creeper at all due to copyright."
+  },
+  "51": {
+	"Character": "ShopMan",
+	"ES": "Tu paleta de colores me dice mucho sobre ti.",
+	"EN": "Your color palette tells me a lot about you."
+  },
+  "52": {
+	"Character": "ShopMan",
+	"ES": "Soy como un camaleón, aunque ya no tengo de quién esconderme",
+	"EN": "I'm like a chameleon, although I no longer have anyone to hide from."
+  },
+  "53": {
+	"Character": "ShopMan",
+	"ES": "¡Puedes dividir el círculo cromático en dos y obtener colores complementarios!",
+	"EN": "You can divide the color wheel in two and get complementary colors!"
+  },
+  "54": {
+	"Character": "ShopMan",
+	"ES": "¿Qué te parecen las skins que se mueven?",
+	"EN": "What do you think of the moving skins?"
+  },
+  "55": {
+	"Character": "ShopMan",
+	"ES": "El día de San Valentín deberías ponerte una skin con un corazón.",
+	"EN": "On Valentine's Day you should use a skin with a heart."
+  },
+  "56": {
+	"Character": "ShopMan",
+	"ES": "Cada color tiene su propio significado, ¡usa el que conecte contigo!",
+	"EN": "Each color has its own meaning, use the one that matches you!"
+  },
+  "57": {
+	"Character": "ShopMan",
+	"ES": "Ese color me gusta, deberías tomarlo.",
+	"EN": "I like that color, you should get it."
+  },
+  "58": {
+	"Character": "ShopMan",
+	"ES": "Hacer esa paleta me costó mucho.",
+	"EN": "Making that palette was very difficult for me."
+  },
+  "59": {
+	"Character": "ShopMan",
+	"ES": "¡Te verías increíble con esos colores!",
+	"EN": "You'd look amazing in those colors!"
+  },
+  "60": {
+	"Character": "ShopMan",
+	"ES": "¡Cómpralo y presume con tus amigos!",
+	"EN": "Buy it and show it off to your friends!"
+  },
+  "61": {
+	"Character": "ShopMan",
+	"ES": "¿Esta será la última de la colección?",
+	"EN": "Will this be the last one in the collection?"
+  },
+  "62": {
+	"Character": "ShopMan",
+	"ES": "Te has esforzado mucho para conseguirla.",
+	"EN": "You've worked really hard to achieve it."
+  },
+  "63": {
+	"Character": "ShopMan",
+	"ES": "Muchas gracias por tu compra.",
+	"EN": "Thank you so much for your purchase."
+  },
+  "64": {
+	"Character": "ShopMan",
+	"ES": "No sabes cúanto significa esto para mí.",
+	"EN": "You have no idea how much this means to me."
+  },
+  "65": {
+	"Character": "ShopMan",
+	"ES": "Esos colores te quedan muy bien.",
+	"EN": "Those colors look great on you."
+  },
+  "66": {
+	"Character": "ShopMan",
+	"ES": "Voy a ahorrar cada monedita.",
+	"EN": "I'm going to save every little penny."
+  },
+  "67": {
+	"Character": "ShopMan",
+	"ES": "¡Un gusto hacer negocios contigo!",
+	"EN": "It's a pleasure doing business with you!"
+  },
+  "68": {
+	"Character": "ShopMan",
+	"ES": "[color=blue][tornado]Ahorra un poco más",
+	"EN": "[color=blue][tornado]Save a little more"
+  },
+  "69": {
+	"Character": "ShopMan",
+	"ES": "[color=blue][tornado]La próxima vez será",
+	"EN": "[color=blue][tornado]Next time it'll be"
+  },
+  "70": {
+	"Character": "ShopMan",
+	"ES": "[color=blue][tornado]Son muchas monedas, no te preocupes",
+	"EN": "[color=blue][tornado]That's a lot of coins, don't worry"
+  },
+  "71": {
+	"Character": "ShopMan",
+	"ES": "[color=blue][tornado]Es culpa de la inflación",
+	"EN": "[color=blue][tornado]It's the fault of inflation"
+  },
+  "72": {
+	"Character": "ShopMan",
+	"ES": "[color=blue][tornado]Ni siquiera a mí me alcanza",
+	"EN": "[color=blue][tornado]Not even I can afford it"
+  },
+  "73": {
+	"Character": "ShopMan",
+	"ES": "[color=#fc2c97]\"1005\"[/color] Me enseño demasiado",
+	"EN": "[color=#fc2c97]\"1005\"[/color] Taught me too much"
+  },
+  "74": {
+	"Character": "ShopMan",
+	"ES": "Te pareces a [color=#fc2c97]ÉL[/color], deben ser de la misma raza",
+	"EN": "You look like [color=#fc2c97]HIM[/color], you must be the same race"
+  },
+  "75": {
+	"Character": "ShopMan",
+	"ES": "[shake]El último escalón del [color=#fc2c97]infierno...[/color]",
+	"EN": "[shake]The last step of [color=#fc2c97]hell...[/color]"
+  },
+  "76": {
+	"Character": "ShopMan",
+	"ES": "Cómo haces para poder [color=red][shake level=10]salir?",
+	"EN": "How do you [color=red][shake level=10]get out?"
+  },
+  "77": {
+	"Character": "ShopMan",
+	"ES": "Quiero irme, ver lo que tu ves. Por qué no mejor tomas mi puesto?",
+	"EN": "I want to leave, to see what you see. Why don't you take my place instead?"
+  },
+  "78": {
+	"Character": "MusicMan",
+	"ES": "Seguro ya entendiste qué hacer. Solo haz coincidir los colores! Bastante fácil verdad?",
+	"EN": "I'm sure you already know what to do. Just match the colors! Easy peasy, right?"
+  },
+  "79": {
+	"Character": "MusicMan",
+	"ES": "Los bloques normales no son los únicos que superar. Hay [color=#fc2c97]trampas[/color] con un contorno rosadito, simplemente combínalas con el color inverso.",
+	"EN": "The normal blocks aren't the only obstacle to avoid. There are traps with a pinky outline, just match with the reverse color"
+  },
+  "80": {
+	"Character": "MusicMan",
+	"ES": "Introduciendo el invertido, como su nombre indica invierte los colores desde el centro de la pantalla. Mismas reglas, solo distracción.",
+	"EN": "Introducing inverted, as it name says, inverts the colors from the middle of the screen. Same rules, just distraction"
+  },
+  "81": {
+	"Character": "MusicMan",
+	"ES": "Parece que tu nivel es de principiante. Tus lentos dedos no parecen estár hechos para [color=#fc2c97][pulse]Dashcore",
+	"EN": "It seems your level is beginner. Your sloppy fingers aren't made for [color=#fc2c97][pulse]Dashcore."
+  },
+  "82": {
+	"Character": "MusicMan",
+	"ES": "Eres bastante promedio, tienes buenos reflejos y reacción ojo-mano. Pero aún te falta para llegar a la [color=#fc2c97]\"cima\".",
+	"EN": "You're pretty average, you have good reflexes and hand-eye coordination. But still have a way to go to reach the  [color=#fc2c97]\"peak\"."
+  },
+  "83": {
+	"Character": "MusicMan",
+	"ES": "Tan cerca pero tan lejos! Nunca habia visto un fracaso tan humillante cómo el tuyo. Ya casi tienes la llave para entrar a [color=#fc2c97][pulse]Dashcore",
+	"EN": "So close, yet so far! I've never seen such a humiliating failure as yours. You're almost there with the key to Dashcore."
+  },
+  "84": {
+	"Character": "MusicMan",
+	"ES": "Una actuación perfecta. Sin duda eres de los pocos que nacieron para dominarlo todo.",
+	"EN": "A perfect performance. Without a doubt, you are one of the few who were born for dominating."
+  },
+  "85": {
+	"Character": "MusicMan",
+	"ES": "Ahora serás liberado, compra todo lo que tus ojos te enseñen, la música que te haga bailar. Y revisa tu progreso en la sala de trofeos.",
+	"EN": "Now you're free. Buy everything that catch your eyes, the music that makes you dance. And check your progress in the trophy room."
+  }
+}
