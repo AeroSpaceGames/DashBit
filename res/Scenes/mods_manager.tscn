@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://dyxfre71yae81"]
+
+[ext_resource type="Script" uid="uid://csgnso7vvbgcd" path="res://Scripts/UI/buttons_connect.gd" id="1_nwe8h"]
+[ext_resource type="Texture2D" uid="uid://cif6a0ois8aho" path="res://Assets/PNG/Button/Add_button.png" id="2_71xho"]
+[ext_resource type="Theme" uid="uid://dcftmnkkb4mv8" path="res://Assets/Font/main_theme.tres" id="2_wfw7d"]
+[ext_resource type="Texture2D" uid="uid://coxrv1p1xa0vm" path="res://Assets/PNG/Button/Upload_button.png" id="3_878ys"]
+[ext_resource type="Texture2D" uid="uid://dpuu2ws2r10xw" path="res://Assets/PNG/Button/Save_button.png" id="4_p41jt"]
+
+[node name="ModsManager" type="Control" unique_id=159825676]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ButtonsConnect" type="Node" parent="." unique_id=363798743]
+script = ExtResource("1_nwe8h")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=913849774]
+
+[node name="BG" type="ColorRect" parent="CanvasLayer" unique_id=2144089361]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.16078432, 0.16078432, 0.16078432, 1)
+
+[node name="ButtonsContainer" type="HBoxContainer" parent="CanvasLayer" unique_id=1152315006]
+offset_left = 43.0
+offset_top = 1291.0
+offset_right = 677.0
+offset_bottom = 1376.0
+alignment = 1
+
+[node name="Add" type="TextureButton" parent="CanvasLayer/ButtonsContainer" unique_id=183529712]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("2_71xho")
+texture_pressed = ExtResource("2_71xho")
+texture_hover = ExtResource("2_71xho")
+texture_focused = ExtResource("2_71xho")
+stretch_mode = 5
+
+[node name="Load" type="TextureButton" parent="CanvasLayer/ButtonsContainer" unique_id=1020670493]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("3_878ys")
+texture_pressed = ExtResource("3_878ys")
+texture_hover = ExtResource("3_878ys")
+texture_focused = ExtResource("3_878ys")
+stretch_mode = 5
+
+[node name="Save" type="TextureButton" parent="CanvasLayer/ButtonsContainer" unique_id=205120142]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("4_p41jt")
+texture_pressed = ExtResource("4_p41jt")
+texture_hover = ExtResource("4_p41jt")
+texture_focused = ExtResource("4_p41jt")
+stretch_mode = 5
+
+[node name="AddLabel" type="Label" parent="CanvasLayer" unique_id=302493078]
+offset_left = 103.0
+offset_top = 1375.0
+offset_right = 191.0
+offset_bottom = 1419.0
+theme = ExtResource("2_wfw7d")
+theme_override_colors/font_color = Color(0.84705883, 0.84705883, 0.84705883, 1)
+theme_override_font_sizes/font_size = 50
+text = "Add"
+horizontal_alignment = 1
+
+[node name="LoadLabel" type="Label" parent="CanvasLayer" unique_id=1730625406]
+offset_left = 302.0
+offset_top = 1375.0
+offset_right = 419.0
+offset_bottom = 1419.0
+theme = ExtResource("2_wfw7d")
+theme_override_colors/font_color = Color(0.84705883, 0.84705883, 0.84705883, 1)
+theme_override_font_sizes/font_size = 50
+text = "Load"
+horizontal_alignment = 1
+
+[node name="SaveLabel" type="Label" parent="CanvasLayer" unique_id=398957762]
+offset_left = 516.0
+offset_top = 1375.0
+offset_right = 633.0
+offset_bottom = 1419.0
+theme = ExtResource("2_wfw7d")
+theme_override_colors/font_color = Color(0.84705883, 0.84705883, 0.84705883, 1)
+theme_override_font_sizes/font_size = 50
+text = "Save"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=1127099571]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -317.0
+offset_top = -714.0
+offset_right = 317.0
+offset_bottom = 418.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer" unique_id=803275896]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -317.0
+offset_top = -714.0
+offset_right = 317.0
+offset_bottom = 418.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ModsContainer" type="VBoxContainer" parent="CanvasLayer/ScrollContainer" unique_id=361109328]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 260
+
+[connection signal="pressed" from="CanvasLayer/ButtonsContainer/Add" to="ButtonsConnect" method="add_mod"]
+[connection signal="pressed" from="CanvasLayer/ButtonsContainer/Load" to="ButtonsConnect" method="load_file"]
+[connection signal="pressed" from="CanvasLayer/ButtonsContainer/Save" to="ButtonsConnect" method="save_file"]
