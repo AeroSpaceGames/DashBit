@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="playlist" load_steps=3 format=3 uid="uid://bc5h17iyv861b"]
+
+[ext_resource type="Texture2D" uid="uid://dmobvaq77b36c" path="res://Assets/PNG/Song_nails/Glass.png" id="1_6c0ij"]
+[ext_resource type="Script" uid="uid://fq805owf2bdl" path="res://Resources/SongNail.gd" id="1_fr6sx"]
+
+[resource]
+script = ExtResource("1_fr6sx")
+playing_nail = ExtResource("1_6c0ij")
+song_name = "Glass"
+song_author = "Aerospace Games"
+custom_color = Color(0.4509804, 0.4509804, 0.81960785, 1)
+metadata/_custom_type_script = "uid://fq805owf2bdl"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="playlist" load_steps=3 format=3 uid="uid://cokpt8ls17fb4"]
+
+[ext_resource type="Script" uid="uid://fq805owf2bdl" path="res://Resources/SongNail.gd" id="1_feocw"]
+[ext_resource type="Texture2D" uid="uid://vad40117acvd" path="res://Assets/PNG/Song_nails/Maladiff.png" id="1_q3sdo"]
+
+[resource]
+script = ExtResource("1_feocw")
+playing_nail = ExtResource("1_q3sdo")
+song_name = "Maladiff"
+song_author = "Aerospace Games"
+custom_color = Color(1, 0.18039216, 0.9882353, 1)
+metadata/_custom_type_script = "uid://fq805owf2bdl"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="playlist" load_steps=3 format=3 uid="uid://ct2jbdbu60qmu"]
+
+[ext_resource type="Script" uid="uid://fq805owf2bdl" path="res://Resources/SongNail.gd" id="1_riasp"]
+[ext_resource type="Texture2D" uid="uid://dhscslc8d18pu" path="res://Assets/PNG/Song_nails/Kobra.png" id="1_w5yo5"]
+
+[resource]
+script = ExtResource("1_riasp")
+playing_nail = ExtResource("1_w5yo5")
+song_name = "Kobra"
+song_author = "Aerospace Games"
+custom_color = Color(0.8862745, 0.79607844, 0, 1)
+metadata/_custom_type_script = "uid://fq805owf2bdl"

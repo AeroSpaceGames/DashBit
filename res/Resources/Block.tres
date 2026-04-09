@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="obstacle" load_steps=2 format=3 uid="uid://bac2ilp71fff2"]
+
+[ext_resource type="Script" path="res://Prefabs/Obstacle.gd" id="1_tfqq2"]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("1_tfqq2")
+skin = 1

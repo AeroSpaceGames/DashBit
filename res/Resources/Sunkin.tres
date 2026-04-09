@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="playlist" load_steps=3 format=3 uid="uid://c6yq2iek8llc"]
+
+[ext_resource type="Script" uid="uid://fq805owf2bdl" path="res://Resources/SongNail.gd" id="1_1m6q5"]
+[ext_resource type="Texture2D" uid="uid://1isedcew212w" path="res://Assets/PNG/Song_nails/Sunkin.png" id="1_fv7mr"]
+
+[resource]
+script = ExtResource("1_1m6q5")
+playing_nail = ExtResource("1_fv7mr")
+song_name = "Sunkin"
+song_author = "Aerospace Games"
+custom_color = Color(0.35686275, 0.1882353, 0.8352941, 1)
+metadata/_custom_type_script = "uid://fq805owf2bdl"

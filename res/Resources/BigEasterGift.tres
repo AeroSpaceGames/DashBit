@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Gift" format=3 uid="uid://co2o840af4v42"]
+
+[ext_resource type="Texture2D" uid="uid://h88jxi6ie1i7" path="res://Assets/PNG/UI/Boxes/GreatEasterPresentBig.png" id="1_l3hua"]
+[ext_resource type="Script" uid="uid://b8mbhyjucbrgr" path="res://Resources/GiftsRes.gd" id="1_tir4l"]
+[ext_resource type="Texture2D" uid="uid://cj1c32on55oq" path="res://Assets/PNG/UI/Boxes/GreatEasterPresent.png" id="2_ycphv"]
+
+[resource]
+script = ExtResource("1_tir4l")
+normal_texture = ExtResource("1_l3hua")
+reduced_texture = ExtResource("2_ycphv")
+stats = [10, 1000, 2200, 6, 6]
+prize_count = 2
+bg_color = Color(0.85490197, 0.6901961, 0.13333334, 1)
+metadata/_custom_type_script = "uid://b8mbhyjucbrgr"
