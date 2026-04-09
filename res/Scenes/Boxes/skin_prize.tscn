@@ -1,0 +1,359 @@
+[gd_scene format=3 uid="uid://ctdtbiiqk2fhk"]
+
+[ext_resource type="Texture2D" uid="uid://bbjtv4tsi2f1k" path="res://Assets/PNG/UI/Boxes/PrizeRevealt.png" id="1_4sdir"]
+[ext_resource type="Shader" uid="uid://dsyh8p8447xni" path="res://Shaders/palletes_coloring.tres" id="2_5cujr"]
+[ext_resource type="Texture2D" uid="uid://dhxd161b7wlkq" path="res://Assets/PNG/Palettes/Black_White.png" id="2_up35b"]
+[ext_resource type="FontFile" uid="uid://dumgagcnbw7j6" path="res://Assets/Font/VCR_OSD_MONO_1.001.ttf" id="3_5cujr"]
+[ext_resource type="Texture2D" uid="uid://viv0lf64kgcj" path="res://Assets/PNG/Palettes/Alien.png" id="3_32ivc"]
+[ext_resource type="Texture2D" uid="uid://s1j3cjyxktc8" path="res://Assets/PNG/Palettes/BB-8.png" id="4_4w4cr"]
+[ext_resource type="Texture2D" uid="uid://bcowno6t7ndyd" path="res://Assets/PNG/Palettes/Bat.png" id="6_1iol4"]
+[ext_resource type="Texture2D" uid="uid://ctl2kknmjth3" path="res://Assets/PNG/Palettes/Kanyi.png" id="6_5ll55"]
+[ext_resource type="Texture2D" uid="uid://bn7dxou4uq67v" path="res://Assets/PNG/Palettes/Gift.png" id="6_uhjo7"]
+[ext_resource type="Texture2D" uid="uid://b76t2tjiqwleg" path="res://Assets/PNG/Palettes/creeper.png" id="7_1g4oy"]
+[ext_resource type="Texture2D" uid="uid://ciobbvr4ryvgc" path="res://Assets/PNG/Palettes/Hat.png" id="7_as1j4"]
+[ext_resource type="Texture2D" uid="uid://c7j3ug465dgqg" path="res://Assets/PNG/Palettes/LG_R.png" id="7_jj4yj"]
+[ext_resource type="Texture2D" uid="uid://cesmous770hdf" path="res://Assets/PNG/Palettes/Magnet_palette.png" id="8_4sj7g"]
+[ext_resource type="Texture2D" uid="uid://dcm75mil56yvm" path="res://Assets/PNG/Palettes/Eye.png" id="8_53ifq"]
+[ext_resource type="Texture2D" uid="uid://daejn77lho7ml" path="res://Assets/PNG/Palettes/Ghost.png" id="9_65q4i"]
+[ext_resource type="Texture2D" uid="uid://5uvqoncehgdi" path="res://Assets/PNG/Palettes/OB_heart.png" id="9_a7my5"]
+[ext_resource type="Texture2D" uid="uid://duy4g2bk4r6l0" path="res://Assets/PNG/Palettes/PG-Happy.png" id="10_uhjo7"]
+[ext_resource type="Texture2D" uid="uid://d17iodpjf71n" path="res://Assets/PNG/Palettes/BW_cross.png" id="11_as1j4"]
+[ext_resource type="Texture2D" uid="uid://cs6u3ew1l05q0" path="res://Assets/PNG/Palettes/Jack.png" id="12_jh424"]
+[ext_resource type="Texture2D" uid="uid://cv4bnw1vel8v3" path="res://Assets/PNG/Palettes/YingYang_palette.png" id="12_keis8"]
+[ext_resource type="Texture2D" uid="uid://8521h4egki03" path="res://Assets/PNG/Palettes/Pattern1.png" id="12_lsh1f"]
+[ext_resource type="Texture2D" uid="uid://70o73ygstbfd" path="res://Assets/PNG/Palettes/Pattern2.png" id="13_xegmc"]
+[ext_resource type="Texture2D" uid="uid://b505hmy8ybun2" path="res://Assets/PNG/Palettes/SMan.png" id="15_cig8n"]
+[ext_resource type="Texture2D" uid="uid://d01rh01mgt5n3" path="res://Assets/PNG/Palettes/Snow.png" id="16_mj4uq"]
+[ext_resource type="Texture2D" uid="uid://4egcfbiusbyw" path="res://Assets/PNG/Palettes/Pumpkin.png" id="20_u8dpn"]
+[ext_resource type="Texture2D" uid="uid://c0q8yf8suwtad" path="res://Assets/PNG/Palettes/Skull.png" id="22_wxre2"]
+[ext_resource type="Texture2D" uid="uid://bggy4re7fcjv3" path="res://Assets/PNG/Palettes/Web.png" id="24_w3iny"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uj2kj"]
+resource_local_to_scene = true
+shader = ExtResource("2_5cujr")
+shader_parameter/Locked = false
+shader_parameter/BlackColor = Color(0, 0, 0, 1)
+shader_parameter/WhiteColor = Color(1, 1, 1, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lsh1f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_32ivc")
+}],
+"loop": true,
+"name": &"Alien",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_4w4cr")
+}],
+"loop": true,
+"name": &"BB_8",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_up35b")
+}],
+"loop": true,
+"name": &"BO",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_up35b")
+}],
+"loop": true,
+"name": &"BW",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_1iol4")
+}],
+"loop": true,
+"name": &"Bat",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_up35b")
+}],
+"loop": true,
+"name": &"CR",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_1g4oy")
+}],
+"loop": true,
+"name": &"Creeper",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_53ifq")
+}],
+"loop": true,
+"name": &"Eye",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_65q4i")
+}],
+"loop": true,
+"name": &"Ghost",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_uhjo7")
+}],
+"loop": true,
+"name": &"Gift",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_as1j4")
+}],
+"loop": true,
+"name": &"Hat",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_jh424")
+}],
+"loop": true,
+"name": &"Jack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_5ll55")
+}],
+"loop": true,
+"name": &"Kanji",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_up35b")
+}],
+"loop": true,
+"name": &"LG",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_jj4yj")
+}],
+"loop": true,
+"name": &"LG_R",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_up35b")
+}],
+"loop": true,
+"name": &"MA",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_4sj7g")
+}],
+"loop": true,
+"name": &"Magnet",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_a7my5")
+}],
+"loop": true,
+"name": &"OB_H",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_lsh1f")
+}],
+"loop": true,
+"name": &"P1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_xegmc")
+}],
+"loop": true,
+"name": &"P2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_up35b")
+}],
+"loop": true,
+"name": &"PC",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_uhjo7")
+}],
+"loop": true,
+"name": &"PG_H",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_u8dpn")
+}],
+"loop": true,
+"name": &"Pumpkin",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_cig8n")
+}],
+"loop": true,
+"name": &"SMan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_up35b")
+}],
+"loop": true,
+"name": &"ST",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_wxre2")
+}],
+"loop": true,
+"name": &"Skull",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_mj4uq")
+}],
+"loop": true,
+"name": &"Snow",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_w3iny")
+}],
+"loop": true,
+"name": &"Web",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_as1j4")
+}],
+"loop": true,
+"name": &"X_GB",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_as1j4")
+}],
+"loop": true,
+"name": &"X_M",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_as1j4")
+}],
+"loop": true,
+"name": &"X_O",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_as1j4")
+}],
+"loop": true,
+"name": &"X_RB",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_as1j4")
+}],
+"loop": true,
+"name": &"X_RY",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_as1j4")
+}],
+"loop": true,
+"name": &"X_YP",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_up35b")
+}],
+"loop": true,
+"name": &"YB",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_keis8")
+}],
+"loop": true,
+"name": &"YingYang",
+"speed": 5.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_uj2kj"]
+font = ExtResource("3_5cujr")
+font_size = 90
+font_color = Color(1, 1, 0, 1)
+outline_size = 25
+outline_color = Color(0.160784, 0.160784, 0.160784, 1)
+
+[node name="Skin_prize" type="TextureRect" unique_id=956497305]
+self_modulate = Color(0.839216, 0.372549, 0, 1)
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_4sdir")
+
+[node name="Skin" type="AnimatedSprite2D" parent="." unique_id=681343842]
+material = SubResource("ShaderMaterial_uj2kj")
+position = Vector2(19.4, 20)
+scale = Vector2(1.8, 1.8)
+sprite_frames = SubResource("SpriteFrames_lsh1f")
+animation = &"Alien"
+
+[node name="Label" type="Label" parent="." unique_id=1559688724]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 9.0
+offset_right = 670.0
+offset_bottom = 172.0
+scale = Vector2(0.14, 0.14)
+text = "New skin Unlocked"
+label_settings = SubResource("LabelSettings_uj2kj")
+horizontal_alignment = 1
+autowrap_mode = 2

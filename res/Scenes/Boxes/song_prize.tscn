@@ -1,0 +1,147 @@
+[gd_scene load_steps=17 format=3 uid="uid://dfblu1g3f6cdb"]
+
+[ext_resource type="Texture2D" uid="uid://bbjtv4tsi2f1k" path="res://Assets/PNG/UI/Boxes/PrizeRevealt.png" id="1_06ovg"]
+[ext_resource type="Texture2D" uid="uid://da1g8vmx08mwo" path="res://Assets/PNG/Song_nails/Dashcore.png" id="2_7xdig"]
+[ext_resource type="Texture2D" uid="uid://ju2g448nx202" path="res://Assets/PNG/Song_nails/Cutulu.png" id="2_ecmje"]
+[ext_resource type="FontFile" uid="uid://dumgagcnbw7j6" path="res://Assets/Font/VCR_OSD_MONO_1.001.ttf" id="3_aul0i"]
+[ext_resource type="Texture2D" uid="uid://dmobvaq77b36c" path="res://Assets/PNG/Song_nails/Glass.png" id="4_1vw3r"]
+[ext_resource type="Texture2D" uid="uid://by1444kklclbd" path="res://Assets/PNG/Song_nails/GraveYard.png" id="5_54ow5"]
+[ext_resource type="Texture2D" uid="uid://dhscslc8d18pu" path="res://Assets/PNG/Song_nails/Kobra.png" id="5_gwnmy"]
+[ext_resource type="Texture2D" uid="uid://b3wr5qsuan4ot" path="res://Assets/PNG/Song_nails/Lectron.png" id="6_54ow5"]
+[ext_resource type="Texture2D" uid="uid://cv2x2tpy5wj3d" path="res://Assets/PNG/Song_nails/Riuka.png" id="7_ylpwp"]
+[ext_resource type="Texture2D" uid="uid://cwyexji2fubx1" path="res://Assets/PNG/Song_nails/Shutdown.png" id="8_g2lss"]
+[ext_resource type="Texture2D" uid="uid://vad40117acvd" path="res://Assets/PNG/Song_nails/Maladiff.png" id="8_ylpwp"]
+[ext_resource type="Texture2D" uid="uid://dh8uld7fx8e01" path="res://Assets/PNG/Song_nails/Smartwatch.png" id="9_tjuuo"]
+[ext_resource type="Texture2D" uid="uid://djvflwyou7imr" path="res://Assets/PNG/Song_nails/SnowBall.png" id="11_ylpwp"]
+[ext_resource type="Texture2D" uid="uid://1isedcew212w" path="res://Assets/PNG/Song_nails/Sunkin.png" id="12_g2lss"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xh4lm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ecmje")
+}],
+"loop": true,
+"name": &"Cthulhu",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_7xdig")
+}],
+"loop": true,
+"name": &"Dashcore",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_1vw3r")
+}],
+"loop": true,
+"name": &"Glass",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_54ow5")
+}],
+"loop": true,
+"name": &"Graveyard",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_gwnmy")
+}],
+"loop": true,
+"name": &"Kobra",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_54ow5")
+}],
+"loop": true,
+"name": &"Lectron",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_ylpwp")
+}],
+"loop": true,
+"name": &"Maladiff",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_ylpwp")
+}],
+"loop": true,
+"name": &"Riuka",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_g2lss")
+}],
+"loop": true,
+"name": &"Shutdown",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_tjuuo")
+}],
+"loop": true,
+"name": &"Smartwatch",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_ylpwp")
+}],
+"loop": true,
+"name": &"Snowball",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_g2lss")
+}],
+"loop": true,
+"name": &"Sunkin",
+"speed": 5.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vrpm7"]
+font = ExtResource("3_aul0i")
+font_size = 80
+font_color = Color(0.294118, 1, 1, 1)
+outline_size = 25
+outline_color = Color(0.160784, 0.160784, 0.160784, 1)
+
+[node name="Song_prize" type="TextureRect"]
+self_modulate = Color(0, 0.827451, 0.564706, 1)
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_06ovg")
+
+[node name="Song" type="AnimatedSprite2D" parent="."]
+position = Vector2(19.4, 20)
+scale = Vector2(1.8, 1.8)
+sprite_frames = SubResource("SpriteFrames_xh4lm")
+animation = &"Maladiff"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 4.0
+offset_right = 693.1428
+offset_bottom = 225.42857
+scale = Vector2(0.14, 0.14)
+text = "New song Unlocked"
+label_settings = SubResource("LabelSettings_vrpm7")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2

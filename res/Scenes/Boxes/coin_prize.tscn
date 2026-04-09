@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://brix5jsx2rh5l"]
+
+[ext_resource type="Texture2D" uid="uid://bbjtv4tsi2f1k" path="res://Assets/PNG/UI/Boxes/PrizeRevealt.png" id="1_ovxms"]
+[ext_resource type="PackedScene" uid="uid://iif17kvht0d" path="res://UI/price.tscn" id="2_vw3m4"]
+
+[node name="Coin_prize" type="TextureRect"]
+self_modulate = Color(1, 0.894118, 0, 1)
+offset_right = 144.0
+offset_bottom = 40.0
+texture = ExtResource("1_ovxms")
+
+[node name="Price" parent="." instance=ExtResource("2_vw3m4")]
+position = Vector2(18, 20)
+scale = Vector2(1.62925, 1.62925)
