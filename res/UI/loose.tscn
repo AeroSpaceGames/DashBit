@@ -1,0 +1,397 @@
+[gd_scene format=3 uid="uid://bdummdqnwicy8"]
+
+[ext_resource type="Script" uid="uid://djqp2yvlmhi2u" path="res://Scripts/UI/loose.gd" id="1_xpsrg"]
+[ext_resource type="Texture2D" uid="uid://dr087otxuvfq0" path="res://Assets/PNG/Button/Replay_button.png" id="2_e58mu"]
+[ext_resource type="Texture2D" uid="uid://bpy86b55f82fv" path="res://Assets/PNG/Button/Menu_button.png" id="3_0v5uc"]
+[ext_resource type="Texture2D" uid="uid://cbtqaj4fra8k" path="res://Assets/PNG/Button/Difs/Mid_button.png" id="3_lhqpe"]
+[ext_resource type="Texture2D" uid="uid://off7dq5glu4y" path="res://Assets/PNG/Button/Difs/Hard_button.png" id="4_agi84"]
+[ext_resource type="FontFile" uid="uid://dumgagcnbw7j6" path="res://Assets/Font/VCR_OSD_MONO_1.001.ttf" id="4_ndyj1"]
+[ext_resource type="Texture2D" uid="uid://c02nj4ewrd81s" path="res://Assets/PNG/Button/Difs/Spooky_button.png" id="5_1i078"]
+[ext_resource type="Texture2D" uid="uid://ixyci6xj0gff" path="res://Assets/PNG/Button/Difs/Winter_button.png" id="6_cnyf4"]
+[ext_resource type="Texture2D" uid="uid://0ubwjtp4q68" path="res://Assets/PNG/UI/Boxes/Rare_icon.png" id="6_cyicj"]
+[ext_resource type="Texture2D" uid="uid://b74m74ggkl7yt" path="res://Assets/PNG/Lose_back.png" id="6_pcsem"]
+[ext_resource type="Texture2D" uid="uid://cqo6dmnih4uhf" path="res://Assets/PNG/Player/Coins/Coin1.png" id="6_wb3ep"]
+[ext_resource type="Texture2D" uid="uid://dev4yt1dqfned" path="res://Assets/PNG/UI/Boxes/VIP_icon.png" id="7_1i078"]
+[ext_resource type="Texture2D" uid="uid://cddnwygvdh2x4" path="res://Assets/PNG/Button/Difs/EasterEgg_button.png" id="7_fv721"]
+[ext_resource type="Texture2D" uid="uid://2ay8ebtstvls" path="res://Assets/PNG/Player/Coins/Coin2.png" id="7_i3heh"]
+[ext_resource type="Texture2D" uid="uid://b7ievtkhtvre" path="res://Assets/PNG/Player/Coins/Coin3.png" id="8_njsbe"]
+[ext_resource type="Texture2D" uid="uid://02oiv5c1a0ai" path="res://Assets/PNG/Player/Coins/Coin4.png" id="9_7vu3l"]
+[ext_resource type="Texture2D" uid="uid://0tartmbv4s14" path="res://Assets/PNG/Player/Coins/Coin5.png" id="10_ut8yc"]
+[ext_resource type="Texture2D" uid="uid://cx7wixtipdys0" path="res://Assets/PNG/Player/Coins/Coin6.png" id="11_5v5sx"]
+[ext_resource type="Texture2D" uid="uid://b5ec75xkh4kgs" path="res://Assets/PNG/Button/Difs/Easy_button.png" id="12_ao1pn"]
+[ext_resource type="AudioStream" uid="uid://bti3cpkcvy7p6" path="res://Assets/Music/Dashbit_lose.wav" id="12_o73qn"]
+[ext_resource type="Theme" uid="uid://dcftmnkkb4mv8" path="res://Assets/Font/main_theme.tres" id="15_2bf7q"]
+[ext_resource type="Texture2D" uid="uid://blac71neukw16" path="res://Assets/PNG/UI/Boxes/Basic_icon.png" id="15_ai5ic"]
+[ext_resource type="Texture2D" uid="uid://ccsuea3svgyla" path="res://Assets/PNG/TransText.png" id="22_w75ps"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1tngq"]
+font = ExtResource("4_ndyj1")
+font_size = 100
+font_color = Color(0.988235, 0.172549, 0.592157, 1)
+outline_size = 15
+outline_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
+shadow_size = 0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fen4t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_wb3ep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_i3heh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_njsbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_7vu3l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ut8yc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_5v5sx")
+}],
+"loop": true,
+"name": &"Roll",
+"speed": 10.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_l0dtd"]
+resource_local_to_scene = true
+font = ExtResource("4_ndyj1")
+font_size = 250
+font_color = Color(1, 0.901961, 0, 1)
+outline_size = 25
+outline_color = Color(0.160784, 0.160784, 0.160784, 1)
+
+[sub_resource type="Animation" id="Animation_1wkja"]
+resource_name = "Bump"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Lose_menu/Continue:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(12, 12), Vector2(13, 13)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Lose_menu/Menu:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.3, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(12, 12), Vector2(13, 13)]
+}
+
+[sub_resource type="Animation" id="Animation_pagjw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Lose_menu/Continue:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(12, 12)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Lose_menu/Menu:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(12, 12)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8ttyf"]
+_data = {
+&"Bump": SubResource("Animation_1wkja"),
+&"RESET": SubResource("Animation_pagjw")
+}
+
+[sub_resource type="Animation" id="Animation_ow7qi"]
+resource_name = "In"
+length = 0.35
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Lose_menu/Dark:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(0.5, 2),
+"update": 0,
+"values": [Vector2(1100, 800), Vector2(360, 800)]
+}
+
+[sub_resource type="Animation" id="Animation_jdls5"]
+resource_name = "Out"
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Lose_menu/Dark:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(2, 0.5),
+"update": 0,
+"values": [Vector2(360, 800), Vector2(-380, 800)]
+}
+
+[sub_resource type="Animation" id="Animation_uoica"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Lose_menu/Dark:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1100, 800)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_72vsd"]
+_data = {
+&"In": SubResource("Animation_ow7qi"),
+&"Out": SubResource("Animation_jdls5"),
+&"RESET": SubResource("Animation_uoica")
+}
+
+[node name="Loose" type="Control" unique_id=290640769 node_paths=PackedStringArray("song")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xpsrg")
+song = NodePath("Song")
+begginer = ExtResource("12_ao1pn")
+pro = ExtResource("3_lhqpe")
+dashcore = ExtResource("4_agi84")
+spooky = ExtResource("5_1i078")
+winter = ExtResource("6_cnyf4")
+easter = ExtResource("7_fv721")
+basic = ExtResource("15_ai5ic")
+special = ExtResource("6_cyicj")
+VIP = ExtResource("7_1i078")
+
+[node name="Lose_menu" type="CanvasLayer" parent="." unique_id=1641482538]
+layer = 2
+
+[node name="Background" type="TextureRect" parent="Lose_menu" unique_id=1320937782]
+unique_name_in_owner = true
+modulate = Color(0.31431612, 0.31431612, 0.3143161, 1)
+offset_right = 18.0
+offset_bottom = 40.0
+scale = Vector2(40, 40)
+texture = ExtResource("6_pcsem")
+
+[node name="Continue" type="TextureButton" parent="Lose_menu" unique_id=1415857131]
+unique_name_in_owner = true
+z_index = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 140.0
+offset_top = 554.0
+offset_right = 156.0
+offset_bottom = 570.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(12, 12)
+pivot_offset = Vector2(8.09723, 8.0625)
+action_mode = 0
+texture_normal = ExtResource("2_e58mu")
+texture_pressed = ExtResource("2_e58mu")
+texture_hover = ExtResource("2_e58mu")
+
+[node name="Menu" type="TextureButton" parent="Lose_menu" unique_id=1809964]
+unique_name_in_owner = true
+z_index = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = 570.0
+offset_right = -144.0
+offset_bottom = 586.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(12, 12)
+pivot_offset = Vector2(8, 8.84615)
+action_mode = 0
+texture_normal = ExtResource("3_0v5uc")
+texture_pressed = ExtResource("3_0v5uc")
+texture_hover = ExtResource("3_0v5uc")
+
+[node name="GameOver_text" type="Label" parent="Lose_menu" unique_id=349043998]
+unique_name_in_owner = true
+anchors_preset = -1
+anchor_left = -0.044444434
+anchor_top = 0.04939475
+anchor_right = 0.0028675504
+anchor_bottom = 0.05501976
+offset_left = 79.0
+offset_top = 107.968414
+offset_right = 509.0
+offset_bottom = 366.96838
+scale = Vector2(1.34895, 1.2956)
+text = "Game Over"
+label_settings = SubResource("LabelSettings_1tngq")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Points" type="RichTextLabel" parent="Lose_menu" unique_id=1766587340]
+unique_name_in_owner = true
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -376.0
+offset_top = -265.99994
+offset_right = 377.2121
+offset_bottom = -45.999634
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.956333, 0.956333)
+pivot_offset = Vector2(359.04453, 110.176636)
+theme = ExtResource("15_2bf7q")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[wave amp=80 freq=5]12"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CoinsGroup" type="Node2D" parent="Lose_menu" unique_id=1546945514]
+unique_name_in_owner = true
+position = Vector2(354, 840)
+
+[node name="Coins_visual" type="AnimatedSprite2D" parent="Lose_menu/CoinsGroup" unique_id=1101343634]
+position = Vector2(-46.99997, 49.00006)
+scale = Vector2(5.1314816, 5.1314816)
+sprite_frames = SubResource("SpriteFrames_fen4t")
+animation = &"Roll"
+autoplay = "Roll"
+
+[node name="Coins" type="Label" parent="Lose_menu/CoinsGroup" unique_id=1086269417]
+unique_name_in_owner = true
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -5.9999695
+offset_top = -4.0
+offset_right = 840.38184
+offset_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.432429, 0.432429)
+text = "0"
+label_settings = SubResource("LabelSettings_l0dtd")
+vertical_alignment = 1
+
+[node name="Box1" type="TextureRect" parent="Lose_menu" unique_id=1365828202]
+modulate = Color(1, 1, 1, 0.470588)
+custom_minimum_size = Vector2(16, 16)
+offset_left = -233.0
+offset_top = 244.0
+offset_right = -217.0
+offset_bottom = 260.0
+texture = ExtResource("15_ai5ic")
+
+[node name="Box2" type="TextureRect" parent="Lose_menu" unique_id=458155749]
+modulate = Color(1, 1, 1, 0.470588)
+custom_minimum_size = Vector2(16, 16)
+offset_left = -72.0
+offset_right = -56.0
+offset_bottom = 16.0
+texture = ExtResource("15_ai5ic")
+
+[node name="Box3" type="TextureRect" parent="Lose_menu" unique_id=1686917917]
+modulate = Color(1, 1, 1, 0.470588)
+custom_minimum_size = Vector2(16, 16)
+offset_left = -286.0
+offset_top = 570.0
+offset_right = -270.0
+offset_bottom = 586.0
+texture = ExtResource("15_ai5ic")
+
+[node name="Container" type="HBoxContainer" parent="Lose_menu" unique_id=1740388304]
+unique_name_in_owner = true
+z_index = 2
+offset_top = 1028.0
+offset_right = 90.0
+offset_bottom = 1044.0
+scale = Vector2(8, 8)
+size_flags_horizontal = 3
+theme_override_constants/separation = 2
+alignment = 1
+
+[node name="Diff" type="TextureRect" parent="Lose_menu/Container" unique_id=1487416270]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.470588)
+layout_mode = 2
+texture = ExtResource("12_ao1pn")
+
+[node name="Dark" type="Sprite2D" parent="Lose_menu" unique_id=661873995]
+z_index = 2
+position = Vector2(1100, 800)
+scale = Vector2(40, 40)
+texture = ExtResource("22_w75ps")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=416941719]
+libraries/ = SubResource("AnimationLibrary_8ttyf")
+autoplay = &"Bump"
+
+[node name="Song" type="AudioStreamPlayer" parent="." unique_id=862164757]
+stream = ExtResource("12_o73qn")
+volume_db = -5.0
+autoplay = true
+
+[node name="Transition" type="AnimationPlayer" parent="." unique_id=377176578]
+libraries/ = SubResource("AnimationLibrary_72vsd")
+autoplay = &"Out"
+
+[connection signal="button_down" from="Lose_menu/Continue" to="." method="_on_continue_button_down"]
+[connection signal="mouse_entered" from="Lose_menu/Continue" to="." method="_on_continue_mouse_entered"]
+[connection signal="mouse_exited" from="Lose_menu/Continue" to="." method="_on_continue_mouse_exited"]
+[connection signal="button_down" from="Lose_menu/Menu" to="." method="_on_menu_button_down"]
+[connection signal="mouse_entered" from="Lose_menu/Menu" to="." method="_on_menu_mouse_entered"]
+[connection signal="mouse_exited" from="Lose_menu/Menu" to="." method="_on_menu_mouse_exited"]
+[connection signal="animation_finished" from="Transition" to="." method="_on_transition_animation_finished"]

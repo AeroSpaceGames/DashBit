@@ -1,0 +1,45 @@
+[gd_scene load_steps=8 format=3 uid="uid://e23so86fwe8c"]
+
+[ext_resource type="Script" uid="uid://b3bslpxhs4ipi" path="res://Scripts/UI/slot_template.gd" id="1_pkhj6"]
+[ext_resource type="Texture2D" uid="uid://bl3qbyxhj4muu" path="res://Assets/PNG/UI/Box_placeholder.png" id="2_pkhj6"]
+[ext_resource type="Texture2D" uid="uid://cgbn8urggguxy" path="res://Assets/PNG/UI/Boxes/Basic_box.png" id="2_vognl"]
+[ext_resource type="Texture2D" uid="uid://b54xfpig0a4f1" path="res://Assets/PNG/UI/Boxes/Rare_box.png" id="3_iw2pl"]
+[ext_resource type="Texture2D" uid="uid://c8dep2ewgorfk" path="res://Assets/PNG/UI/Boxes/VIP_box.png" id="4_52rus"]
+[ext_resource type="FontFile" uid="uid://dumgagcnbw7j6" path="res://Assets/Font/VCR_OSD_MONO_1.001.ttf" id="6_iw2pl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_52rus"]
+font = ExtResource("6_iw2pl")
+font_size = 120
+font_color = Color(0, 1, 0, 1)
+
+[node name="Slot_Template" type="TextureButton"]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(5, 5)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("2_pkhj6")
+texture_pressed = ExtResource("2_pkhj6")
+texture_hover = ExtResource("2_pkhj6")
+script = ExtResource("1_pkhj6")
+basic_text = ExtResource("2_vognl")
+rare_text = ExtResource("3_iw2pl")
+vip_text = ExtResource("4_52rus")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(20, 20)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("3_iw2pl")
+
+[node name="Secs" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_top = 40.0
+offset_right = 335.0
+offset_bottom = 146.0
+scale = Vector2(0.121122, 0.121122)
+text = "8s"
+label_settings = SubResource("LabelSettings_52rus")
+horizontal_alignment = 1
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]

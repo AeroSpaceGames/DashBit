@@ -1,0 +1,58 @@
+[gd_scene load_steps=10 format=3 uid="uid://iif17kvht0d"]
+
+[ext_resource type="Texture2D" uid="uid://cqo6dmnih4uhf" path="res://Assets/PNG/Player/Coins/Coin1.png" id="1_b5se3"]
+[ext_resource type="Texture2D" uid="uid://2ay8ebtstvls" path="res://Assets/PNG/Player/Coins/Coin2.png" id="2_c421s"]
+[ext_resource type="Texture2D" uid="uid://b7ievtkhtvre" path="res://Assets/PNG/Player/Coins/Coin3.png" id="3_72n6a"]
+[ext_resource type="Texture2D" uid="uid://02oiv5c1a0ai" path="res://Assets/PNG/Player/Coins/Coin4.png" id="4_fawed"]
+[ext_resource type="Texture2D" uid="uid://0tartmbv4s14" path="res://Assets/PNG/Player/Coins/Coin5.png" id="5_mycdu"]
+[ext_resource type="Texture2D" uid="uid://cx7wixtipdys0" path="res://Assets/PNG/Player/Coins/Coin6.png" id="6_1hon2"]
+[ext_resource type="FontFile" uid="uid://dumgagcnbw7j6" path="res://Assets/Font/VCR_OSD_MONO_1.001.ttf" id="7_ayyv6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k1ee7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_1hon2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_mycdu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fawed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_72n6a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_c421s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_b5se3")
+}],
+"loop": true,
+"name": &"Roll",
+"speed": 10.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_t5p45"]
+font = ExtResource("7_ayyv6")
+font_size = 361
+font_color = Color(1, 0.901961, 0, 1)
+outline_size = 60
+outline_color = Color(0.160784, 0.160784, 0.160784, 1)
+
+[node name="Price" type="AnimatedSprite2D"]
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_k1ee7")
+animation = &"Roll"
+autoplay = "Roll"
+
+[node name="Coins" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 8.0
+offset_top = -7.25
+offset_right = 2148.0
+offset_bottom = 310.75
+scale = Vector2(0.0418258, 0.0418258)
+text = "20"
+label_settings = SubResource("LabelSettings_t5p45")

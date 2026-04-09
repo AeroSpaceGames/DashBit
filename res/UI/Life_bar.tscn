@@ -1,0 +1,95 @@
+[gd_scene load_steps=4 format=3 uid="uid://b4l0y3dx2lbc"]
+
+[ext_resource type="Script" path="res://Scripts/UI/Life_bar.gd" id="1_iyibp"]
+[ext_resource type="Texture2D" uid="uid://cpp3mtoq2ejcb" path="res://Assets/PNG/UI/Life_bar/Life_Progress.png" id="1_ncqvg"]
+[ext_resource type="Texture2D" uid="uid://dxhe8golfa6oo" path="res://Assets/PNG/UI/Life_bar/Life_over.png" id="2_jgc7w"]
+
+[node name="Life_bar" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iyibp")
+
+[node name="Background_bar" type="TextureProgressBar" parent="."]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -350.0
+offset_top = 240.0
+offset_right = -280.0
+offset_bottom = 243.0
+grow_horizontal = 2
+scale = Vector2(10, 10)
+max_value = 30.0
+texture_under = ExtResource("1_ncqvg")
+tint_under = Color(0.160784, 0.160784, 0.160784, 0.313726)
+tint_over = Color(1, 1, 1, 0)
+tint_progress = Color(1, 1, 1, 0)
+
+[node name="Effect_bar" type="TextureProgressBar" parent="."]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -350.0
+offset_top = 240.0
+offset_right = -280.0
+offset_bottom = 243.0
+grow_horizontal = 2
+scale = Vector2(10, 10)
+max_value = 30.0
+value = 30.0
+texture_progress = ExtResource("1_ncqvg")
+tint_under = Color(1, 1, 1, 0)
+tint_over = Color(1, 1, 1, 0)
+tint_progress = Color(0.988235, 0.172549, 0.592157, 0.85098)
+
+[node name="Progress_bar" type="TextureProgressBar" parent="."]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -350.0
+offset_top = 240.0
+offset_right = -280.0
+offset_bottom = 243.0
+grow_horizontal = 2
+scale = Vector2(10, 10)
+max_value = 30.0
+value = 22.0
+texture_under = ExtResource("1_ncqvg")
+texture_over = ExtResource("2_jgc7w")
+texture_progress = ExtResource("1_ncqvg")
+tint_under = Color(1, 1, 1, 0)
+tint_over = Color(1, 1, 1, 0)
+tint_progress = Color(1, 0.85098, 0, 1)
+
+[node name="Over_bar" type="TextureProgressBar" parent="."]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -350.0
+offset_top = 240.0
+offset_right = -280.0
+offset_bottom = 243.0
+grow_horizontal = 2
+scale = Vector2(10, 10)
+max_value = 30.0
+texture_over = ExtResource("2_jgc7w")
+tint_under = Color(1, 1, 1, 0)
+tint_over = Color(0.160784, 0.160784, 0.160784, 1)
+tint_progress = Color(1, 1, 1, 0)
+
+[node name="Effect" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Effect" to="." method="_on_effect_timeout"]

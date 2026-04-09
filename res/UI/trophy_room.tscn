@@ -1,0 +1,418 @@
+[gd_scene load_steps=29 format=3 uid="uid://bl7x0gyxs7lmp"]
+
+[ext_resource type="Texture2D" uid="uid://cialpj82kmfbc" path="res://Assets/PNG/UI/Trophies/Shelve.png" id="1_m6v5i"]
+[ext_resource type="Script" uid="uid://d3lg0ysb3kfei" path="res://Scripts/UI/trophy_room.gd" id="1_wfggo"]
+[ext_resource type="Texture2D" uid="uid://kjkqcruotwsa" path="res://Assets/PNG/UI/Trophies/Begginer_trophy.png" id="2_4uv6g"]
+[ext_resource type="Texture2D" uid="uid://bvxdv2mjn54rh" path="res://Assets/PNG/UI/Trophies/Pro_trophy.png" id="3_os0do"]
+[ext_resource type="Texture2D" uid="uid://ddouacljr3hc7" path="res://Assets/PNG/UI/Trophies/Dashcore_trophy.png" id="4_tlq1q"]
+[ext_resource type="FontFile" uid="uid://dumgagcnbw7j6" path="res://Assets/Font/VCR_OSD_MONO_1.001.ttf" id="6_xuhs0"]
+[ext_resource type="Texture2D" uid="uid://ccsuea3svgyla" path="res://Assets/PNG/TransText.png" id="7_1dm7x"]
+[ext_resource type="Texture2D" uid="uid://c168kyhjvi3qc" path="res://Assets/PNG/TrophyBack1.png" id="8_8xvkb"]
+[ext_resource type="Texture2D" uid="uid://v7vedycduqm3" path="res://Assets/PNG/TrophyBack2.png" id="9_1dm7x"]
+[ext_resource type="Texture2D" uid="uid://ct4qhao2i0h3h" path="res://Assets/PNG/TrophyBack3.png" id="10_jspn1"]
+[ext_resource type="AudioStream" uid="uid://cpwouq02dnwjf" path="res://Assets/Music/Trophy_room.wav" id="12_1dm7x"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_m6v5i"]
+load_path = "res://.godot/imported/Menu_button.png-e74d5bd99bcc0292b8260a4dd1112cca.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4uv6g"]
+load_path = "res://.godot/imported/Menu_button.png-e74d5bd99bcc0292b8260a4dd1112cca.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_dvlo3"]
+load_path = "res://.godot/imported/Menu_button.png-e74d5bd99bcc0292b8260a4dd1112cca.ctex"
+
+[sub_resource type="LabelSettings" id="LabelSettings_6ipyd"]
+font = ExtResource("6_xuhs0")
+font_size = 361
+font_color = Color(0.0352941, 1, 0.678431, 1)
+outline_size = 60
+outline_color = Color(0.160784, 0.160784, 0.160784, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_xuhs0"]
+font = ExtResource("6_xuhs0")
+font_size = 361
+font_color = Color(1, 1, 0.490196, 1)
+outline_size = 60
+outline_color = Color(0.160784, 0.160784, 0.160784, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_si07p"]
+font = ExtResource("6_xuhs0")
+font_size = 361
+font_color = Color(0.952941, 0, 0.4, 1)
+outline_size = 60
+outline_color = Color(0.160784, 0.160784, 0.160784, 1)
+
+[sub_resource type="Gradient" id="Gradient_mgtws"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_8xvkb"]
+gradient = SubResource("Gradient_mgtws")
+fill_from = Vector2(0, 1)
+fill_to = Vector2(0, 0)
+
+[sub_resource type="Gradient" id="Gradient_6ipyd"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_mgtws"]
+gradient = SubResource("Gradient_6ipyd")
+fill = 1
+fill_from = Vector2(0.5048077, 0.4903846)
+fill_to = Vector2(0.8125, 0.17788461)
+
+[sub_resource type="Animation" id="Animation_wfggo"]
+resource_name = "In"
+length = 0.35
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Dark:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(0.5, 2),
+"update": 0,
+"values": [Vector2(1100, 800), Vector2(360, 800)]
+}
+
+[sub_resource type="Animation" id="Animation_si07p"]
+resource_name = "Out"
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Dark:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(2, 0.5),
+"update": 0,
+"values": [Vector2(360, 800), Vector2(-380, 800)]
+}
+
+[sub_resource type="Animation" id="Animation_xuhs0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Dark:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1100, 800)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6ipyd"]
+_data = {
+&"In": SubResource("Animation_wfggo"),
+&"Out": SubResource("Animation_si07p"),
+&"RESET": SubResource("Animation_xuhs0")
+}
+
+[sub_resource type="Animation" id="Animation_6ipyd"]
+resource_name = "Fly"
+length = 3.0
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Begginer_best:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(295, 1000), Vector2(295, 1030)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Pro_best:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.4, 1.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(295, 600), Vector2(295, 630)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/DashCore_best:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.8, 2.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(290, 158), Vector2(290, 188)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SunLight:energy")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(2, 2),
+"update": 0,
+"values": [1.0, 1.95]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Background:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("8_8xvkb"), ExtResource("9_1dm7x"), ExtResource("10_jspn1"), ExtResource("8_8xvkb"), ExtResource("9_1dm7x"), ExtResource("10_jspn1"), ExtResource("8_8xvkb"), ExtResource("9_1dm7x"), ExtResource("10_jspn1"), ExtResource("8_8xvkb"), ExtResource("9_1dm7x"), ExtResource("10_jspn1")]
+}
+
+[sub_resource type="Animation" id="Animation_mgtws"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Begginer_best:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(295, 948)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Pro_best:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(295, 574)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/DashCore_best:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(290, 188)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SunLight:energy")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Background:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("8_8xvkb")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8xvkb"]
+_data = {
+&"Fly": SubResource("Animation_6ipyd"),
+&"RESET": SubResource("Animation_mgtws")
+}
+
+[node name="Trophy Room" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wfggo")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Menu" type="TextureButton" parent="CanvasLayer"]
+unique_name_in_owner = true
+z_index = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -8.0
+offset_top = 732.0001
+offset_right = 8.0
+offset_bottom = 748.0001
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(5, 5)
+pivot_offset = Vector2(8, 8.84615)
+action_mode = 0
+texture_normal = SubResource("CompressedTexture2D_m6v5i")
+texture_pressed = SubResource("CompressedTexture2D_4uv6g")
+texture_hover = SubResource("CompressedTexture2D_dvlo3")
+
+[node name="Beg_shelf" type="Sprite2D" parent="CanvasLayer"]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(360, 1231)
+scale = Vector2(5, 5)
+texture = ExtResource("1_m6v5i")
+
+[node name="BegginerTrophy" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(164, 1098)
+scale = Vector2(8, 8)
+texture = ExtResource("2_4uv6g")
+
+[node name="Begginer_best" type="Label" parent="CanvasLayer"]
+unique_name_in_owner = true
+offset_left = 295.0
+offset_top = 948.0
+offset_right = 1141.0
+offset_bottom = 1266.003
+scale = Vector2(0.452797, 0.452797)
+text = "7777"
+label_settings = SubResource("LabelSettings_6ipyd")
+
+[node name="Pro_shelf" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(360, 829)
+scale = Vector2(5, 5)
+texture = ExtResource("1_m6v5i")
+
+[node name="ProTrophy" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(164, 696)
+scale = Vector2(8, 8)
+texture = ExtResource("3_os0do")
+
+[node name="Pro_best" type="Label" parent="CanvasLayer"]
+unique_name_in_owner = true
+offset_left = 295.0
+offset_top = 574.0
+offset_right = 1141.0
+offset_bottom = 892.0
+scale = Vector2(0.452797, 0.452797)
+text = "7777"
+label_settings = SubResource("LabelSettings_xuhs0")
+
+[node name="Dash_shelf" type="Sprite2D" parent="CanvasLayer"]
+modulate = Color(1, 0.270588, 0.541176, 1)
+position = Vector2(360, 385)
+scale = Vector2(5, 5)
+texture = ExtResource("1_m6v5i")
+
+[node name="DashcoreTrophy" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(164, 252)
+scale = Vector2(8, 8)
+texture = ExtResource("4_tlq1q")
+
+[node name="DashCore_best" type="Label" parent="CanvasLayer"]
+unique_name_in_owner = true
+offset_left = 290.0
+offset_top = 188.0
+offset_right = 1136.0
+offset_bottom = 506.00055
+scale = Vector2(0.45123333, 0.453)
+text = "7777"
+label_settings = SubResource("LabelSettings_si07p")
+
+[node name="Dark" type="Sprite2D" parent="CanvasLayer"]
+z_index = 2
+position = Vector2(1100, 800)
+scale = Vector2(40, 40)
+texture = ExtResource("7_1dm7x")
+
+[node name="Background" type="TextureRect" parent="."]
+light_mask = 3
+layout_mode = 0
+offset_right = 36.0
+offset_bottom = 80.0
+scale = Vector2(20, 20)
+texture = ExtResource("8_8xvkb")
+
+[node name="Begginer" type="PointLight2D" parent="."]
+light_mask = 2
+visibility_layer = 3
+position = Vector2(360.7969, 1074.124)
+scale = Vector2(11.256348, 7.4023724)
+color = Color(0.03529412, 1, 0.6784314, 1)
+energy = 0.5
+texture = SubResource("GradientTexture2D_8xvkb")
+
+[node name="Pro" type="PointLight2D" parent="."]
+light_mask = 2
+visibility_layer = 3
+position = Vector2(360, 629)
+scale = Vector2(11.256348, 7.4023724)
+color = Color(1, 1, 0.49019608, 1)
+energy = 0.5
+texture = SubResource("GradientTexture2D_8xvkb")
+
+[node name="Dashcore" type="PointLight2D" parent="."]
+light_mask = 2
+visibility_layer = 3
+position = Vector2(360, 236.99998)
+scale = Vector2(11.256348, 7.4023724)
+color = Color(0.9254902, 0.3647059, 0.5921569, 1)
+energy = 0.5
+texture = SubResource("GradientTexture2D_8xvkb")
+
+[node name="SunLight" type="PointLight2D" parent="."]
+light_mask = 2
+visibility_layer = 3
+position = Vector2(360, 1532)
+scale = Vector2(11.937499, 11.59375)
+texture = SubResource("GradientTexture2D_mgtws")
+
+[node name="DirectionalLight" type="DirectionalLight2D" parent="."]
+energy = 0.3
+
+[node name="Transition" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_6ipyd")
+}
+autoplay = "Out"
+
+[node name="Fly" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_8xvkb")
+}
+autoplay = "Fly"
+
+[node name="Song" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_1dm7x")
+autoplay = true
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+scale = Vector2(0.99999994, 0.99999994)
+color = Color(0.29543713, 0.29543713, 0.29543713, 1)
+
+[connection signal="button_down" from="CanvasLayer/Menu" to="." method="_on_menu_button_down"]
+[connection signal="animation_finished" from="Transition" to="." method="_on_transition_animation_finished"]

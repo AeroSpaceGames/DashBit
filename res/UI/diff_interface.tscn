@@ -1,0 +1,240 @@
+[gd_scene format=3 uid="uid://bgmagoqqtge6e"]
+
+[ext_resource type="Script" uid="uid://be450brgdx5d7" path="res://Scripts/UI/diff_interface.gd" id="1_vu7sc"]
+[ext_resource type="Script" uid="uid://bwvm42k4cdss5" path="res://Resources/DifficultyRes.gd" id="2_2qyfh"]
+[ext_resource type="Texture2D" uid="uid://b864cafo1kouf" path="res://Assets/PNG/UndefinedTexture.png" id="2_nxg80"]
+[ext_resource type="Texture2D" uid="uid://b5ec75xkh4kgs" path="res://Assets/PNG/Button/Difs/Easy_button.png" id="3_7khdj"]
+[ext_resource type="Texture2D" uid="uid://bktj171rh6563" path="res://Assets/PNG/Button/Delete_button.png" id="4_7khdj"]
+[ext_resource type="Theme" uid="uid://dcftmnkkb4mv8" path="res://Assets/Font/main_theme.tres" id="5_yb7uk"]
+[ext_resource type="Texture2D" uid="uid://cbtqaj4fra8k" path="res://Assets/PNG/Button/Difs/Mid_button.png" id="6_8077w"]
+[ext_resource type="Texture2D" uid="uid://off7dq5glu4y" path="res://Assets/PNG/Button/Difs/Hard_button.png" id="7_wia4l"]
+[ext_resource type="Texture2D" uid="uid://71dsll4t762v" path="res://Assets/PNG/Button/Edit_button.png" id="8_wia4l"]
+[ext_resource type="Texture2D" uid="uid://c7mmy82nwouv2" path="res://Assets/PNG/Button/BG_button.png" id="9_2lcje"]
+[ext_resource type="Texture2D" uid="uid://b2c8so778lpyd" path="res://Assets/PNG/Button/Particle_button.png" id="10_pqf3w"]
+
+[sub_resource type="Resource" id="Resource_7khdj"]
+resource_local_to_scene = true
+script = ExtResource("2_2qyfh")
+icon = ExtResource("2_nxg80")
+bg = ExtResource("2_nxg80")
+particle = ExtResource("2_nxg80")
+internal_data = null
+metadata/_custom_type_script = "uid://bwvm42k4cdss5"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7khdj"]
+bg_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
+
+[node name="DiffInterface" type="Control" unique_id=1032215086]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vu7sc")
+res = SubResource("Resource_7khdj")
+
+[node name="Icon" type="TextureButton" parent="." unique_id=83750971]
+z_index = 1
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 128.0
+texture_normal = ExtResource("3_7khdj")
+texture_pressed = ExtResource("3_7khdj")
+texture_hover = ExtResource("3_7khdj")
+texture_focused = ExtResource("3_7khdj")
+stretch_mode = 5
+
+[node name="Delete" type="TextureButton" parent="." unique_id=1574518469]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 23.0
+offset_right = 205.0
+offset_bottom = 89.0
+texture_normal = ExtResource("4_7khdj")
+texture_pressed = ExtResource("4_7khdj")
+texture_hover = ExtResource("4_7khdj")
+texture_focused = ExtResource("4_7khdj")
+stretch_mode = 5
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1457462198]
+layer = 2
+
+[node name="EditMode" type="Control" parent="CanvasLayer" unique_id=1223404284]
+unique_name_in_owner = true
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 252.0
+offset_top = 600.0
+offset_right = 252.0
+offset_bottom = 600.0
+
+[node name="Panel" type="Panel" parent="CanvasLayer/EditMode" unique_id=1837429788]
+layout_mode = 0
+offset_right = 391.0
+offset_bottom = 869.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7khdj")
+
+[node name="NameEdit" type="TextEdit" parent="CanvasLayer/EditMode" unique_id=626217059]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 18.0
+offset_top = 20.0
+offset_right = 374.0
+offset_bottom = 85.0
+theme = ExtResource("5_yb7uk")
+theme_override_font_sizes/font_size = 50
+placeholder_text = "Name Here"
+
+[node name="DiffEdit" type="OptionButton" parent="CanvasLayer/EditMode" unique_id=162890543]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 64.0
+offset_top = 119.0
+offset_right = 330.0
+offset_bottom = 196.0
+theme = ExtResource("5_yb7uk")
+theme_override_colors/font_color = Color(0.84705883, 0.84705883, 0.84705883, 1)
+theme_override_font_sizes/font_size = 50
+alignment = 1
+expand_icon = true
+selected = 0
+item_count = 5
+popup/item_0/text = "Easy"
+popup/item_0/icon = ExtResource("3_7khdj")
+popup/item_0/id = 0
+popup/item_1/text = "Easy-Pro"
+popup/item_1/icon = ExtResource("3_7khdj")
+popup/item_1/id = 1
+popup/item_2/text = "Pro"
+popup/item_2/icon = ExtResource("6_8077w")
+popup/item_2/id = 2
+popup/item_3/text = "Pro-Hard"
+popup/item_3/icon = ExtResource("6_8077w")
+popup/item_3/id = 3
+popup/item_4/text = "Hard"
+popup/item_4/icon = ExtResource("7_wia4l")
+popup/item_4/id = 4
+
+[node name="IconEdit" type="TextureButton" parent="CanvasLayer/EditMode" unique_id=305289442]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 300.0
+offset_right = 115.0
+offset_bottom = 387.0
+texture_normal = ExtResource("8_wia4l")
+texture_pressed = ExtResource("8_wia4l")
+texture_hover = ExtResource("8_wia4l")
+texture_focused = ExtResource("8_wia4l")
+stretch_mode = 5
+
+[node name="BGEdit" type="TextureButton" parent="CanvasLayer/EditMode" unique_id=1588302260]
+layout_mode = 0
+offset_left = 172.0
+offset_top = 231.0
+offset_right = 246.0
+offset_bottom = 305.0
+texture_normal = ExtResource("9_2lcje")
+texture_pressed = ExtResource("9_2lcje")
+texture_hover = ExtResource("9_2lcje")
+texture_focused = ExtResource("9_2lcje")
+stretch_mode = 5
+
+[node name="BGVisual" type="TextureRect" parent="CanvasLayer/EditMode" unique_id=392284997]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 164.0
+offset_top = 321.0
+offset_right = 254.0
+offset_bottom = 521.0
+
+[node name="ParticleEdit" type="TextureButton" parent="CanvasLayer/EditMode" unique_id=1904308305]
+layout_mode = 0
+offset_left = 291.0
+offset_top = 231.0
+offset_right = 364.0
+offset_bottom = 304.0
+texture_normal = ExtResource("10_pqf3w")
+texture_pressed = ExtResource("10_pqf3w")
+texture_hover = ExtResource("10_pqf3w")
+texture_focused = ExtResource("10_pqf3w")
+stretch_mode = 5
+
+[node name="ParticleVisual" type="TextureRect" parent="CanvasLayer/EditMode" unique_id=1997391630]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 289.0
+offset_top = 321.0
+offset_right = 369.0
+offset_bottom = 401.0
+
+[node name="FileDialog" type="FileDialog" parent="CanvasLayer/EditMode" unique_id=1391967862]
+unique_name_in_owner = true
+oversampling_override = 1.0
+title = "Open a File"
+initial_position = 1
+ok_button_text = "Select"
+dialog_hide_on_ok = true
+file_mode = 0
+filters = PackedStringArray("*.png;Image")
+use_native_dialog = true
+
+[node name="MechsEdit" type="TextEdit" parent="CanvasLayer/EditMode" unique_id=163586551]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 19.0
+offset_top = 542.0
+offset_right = 373.0
+offset_bottom = 626.0
+theme = ExtResource("5_yb7uk")
+theme_override_font_sizes/font_size = 30
+placeholder_text = "Mechs Indexes
+(i.e. 0,1,3)"
+
+[node name="CoinsSlider" type="HSlider" parent="CanvasLayer/EditMode" unique_id=252890285]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 20.0
+offset_top = 711.0
+offset_right = 373.0
+offset_bottom = 727.0
+max_value = 10.0
+step = 0.5
+ticks_on_borders = true
+
+[node name="CoinsLabel" type="Label" parent="CanvasLayer/EditMode" unique_id=1049781788]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 19.0
+offset_top = 669.0
+offset_right = 373.0
+offset_bottom = 698.0
+theme = ExtResource("5_yb7uk")
+theme_override_colors/font_color = Color(0.84705883, 0.84705883, 0.84705883, 1)
+text = "Coins x1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MainColEdit" type="ColorPickerButton" parent="CanvasLayer/EditMode" unique_id=1052706217]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 107.0
+offset_top = 774.0
+offset_right = 285.0
+offset_bottom = 825.0
+color = Color(1, 1, 1, 1)
+
+[connection signal="button_down" from="Icon" to="." method="edit_mode"]
+[connection signal="pressed" from="Delete" to="." method="delete"]
+[connection signal="text_changed" from="CanvasLayer/EditMode/NameEdit" to="." method="draw_name"]
+[connection signal="item_selected" from="CanvasLayer/EditMode/DiffEdit" to="." method="new_difficulty"]
+[connection signal="button_down" from="CanvasLayer/EditMode/IconEdit" to="." method="connect_icon"]
+[connection signal="button_down" from="CanvasLayer/EditMode/IconEdit" to="." method="open_file_manager"]
+[connection signal="button_down" from="CanvasLayer/EditMode/BGEdit" to="." method="connect_bg"]
+[connection signal="button_down" from="CanvasLayer/EditMode/BGEdit" to="." method="open_file_manager"]
+[connection signal="button_down" from="CanvasLayer/EditMode/ParticleEdit" to="." method="connect_particle"]
+[connection signal="button_down" from="CanvasLayer/EditMode/ParticleEdit" to="." method="open_file_manager"]
+[connection signal="text_changed" from="CanvasLayer/EditMode/MechsEdit" to="." method="mechs_changed"]
+[connection signal="value_changed" from="CanvasLayer/EditMode/CoinsSlider" to="." method="change_coins_mult"]
+[connection signal="color_changed" from="CanvasLayer/EditMode/MainColEdit" to="." method="change_main_col"]

@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=3 uid="uid://ddmxx8v6njhcq"]
+
+[ext_resource type="Texture2D" uid="uid://citeoeo6tx6ye" path="res://Assets/PNG/Palettes/PlaceHolder_palette.png" id="1_e6djh"]
+[ext_resource type="Script" uid="uid://dhntgkk4sjo7d" path="res://Scripts/UI/group_template.gd" id="1_tg4jk"]
+[ext_resource type="Texture2D" uid="uid://dub0v4h06pvg6" path="res://Assets/PNG/Palettes/Owned_palette.png" id="2_tg4jk"]
+[ext_resource type="PackedScene" uid="uid://iif17kvht0d" path="res://UI/price.tscn" id="3_vnp4v"]
+[ext_resource type="FontFile" uid="uid://dumgagcnbw7j6" path="res://Assets/Font/VCR_OSD_MONO_1.001.ttf" id="4_tcpgc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_gefrj"]
+font = ExtResource("4_tcpgc")
+font_size = 46
+font_color = Color(0.0352941, 0.870588, 0.662745, 1)
+outline_color = Color(0.160784, 0.160784, 0.160784, 1)
+
+[node name="_group" type="Control" groups=["groups"]]
+layout_mode = 3
+anchors_preset = 0
+offset_bottom = 245.0
+script = ExtResource("1_tg4jk")
+owned_texture = ExtResource("2_tg4jk")
+normal_texture = ExtResource("1_e6djh")
+
+[node name="PlaceHolder_" type="Sprite2D" parent="."]
+scale = Vector2(14.4, 14.4)
+texture = ExtResource("1_e6djh")
+
+[node name="_b" type="TextureButton" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = -9.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 8.99997
+scale = Vector2(12, 12)
+pivot_offset = Vector2(9.58334, 9.42364)
+stretch_mode = 3
+
+[node name="_Price" parent="." instance=ExtResource("3_vnp4v")]
+unique_name_in_owner = true
+position = Vector2(-83, 227)
+
+[node name="Name" type="Label" parent="."]
+layout_mode = 0
+offset_left = -144.0
+offset_top = 147.0
+offset_right = 147.0
+offset_bottom = 188.0
+text = "Template"
+label_settings = SubResource("LabelSettings_gefrj")
+horizontal_alignment = 1
+
+[connection signal="pressed" from="_b" to="." method="_on__b_pressed"]

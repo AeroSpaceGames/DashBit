@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://cfjsqvwxaxr3y"]
+
+[ext_resource type="Texture2D" uid="uid://citeoeo6tx6ye" path="res://Assets/PNG/Palettes/PlaceHolder_palette.png" id="1_qo71v"]
+[ext_resource type="Script" uid="uid://dhntgkk4sjo7d" path="res://Scripts/UI/group_template.gd" id="1_xqsvu"]
+[ext_resource type="Texture2D" uid="uid://dub0v4h06pvg6" path="res://Assets/PNG/Palettes/Owned_palette.png" id="2_l4gmq"]
+[ext_resource type="Shader" uid="uid://dsyh8p8447xni" path="res://Shaders/palletes_coloring.tres" id="2_xqsvu"]
+[ext_resource type="Texture2D" uid="uid://dhxd161b7wlkq" path="res://Assets/PNG/Palettes/Black_White.png" id="3_l4gmq"]
+[ext_resource type="PackedScene" uid="uid://iif17kvht0d" path="res://UI/price.tscn" id="4_ua5e0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tmow7"]
+resource_local_to_scene = true
+shader = ExtResource("2_xqsvu")
+shader_parameter/Locked = false
+shader_parameter/BlackColor = Color(0, 0, 0, 1)
+shader_parameter/WhiteColor = Color(0, 0, 0, 1)
+
+[node name="_group" type="Control" unique_id=1281194793 groups=["groups"]]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_xqsvu")
+owned_texture = ExtResource("2_l4gmq")
+normal_texture = ExtResource("1_qo71v")
+
+[node name="PlaceHolder_" type="Sprite2D" parent="." unique_id=1170255729]
+scale = Vector2(14.4, 14.4)
+texture = ExtResource("1_qo71v")
+
+[node name="_b" type="TextureButton" parent="." unique_id=758373242]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_tmow7")
+layout_mode = 0
+offset_left = -9.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 8.99997
+scale = Vector2(12, 12)
+pivot_offset = Vector2(9.58334, 9.42364)
+texture_normal = ExtResource("3_l4gmq")
+texture_pressed = ExtResource("3_l4gmq")
+texture_hover = ExtResource("3_l4gmq")
+stretch_mode = 3
+
+[node name="_Price" parent="." unique_id=1542822500 instance=ExtResource("4_ua5e0")]
+unique_name_in_owner = true
+position = Vector2(-83, 180)
+
+[connection signal="pressed" from="_b" to="." method="_on__b_pressed"]

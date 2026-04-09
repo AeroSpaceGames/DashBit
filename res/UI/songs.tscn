@@ -1,0 +1,1562 @@
+[gd_scene format=3 uid="uid://pscbqumg8sw4"]
+
+[ext_resource type="Script" uid="uid://cndbjed7ly8po" path="res://Scripts/UI/songs.gd" id="1_78ha7"]
+[ext_resource type="FontFile" uid="uid://dumgagcnbw7j6" path="res://Assets/Font/VCR_OSD_MONO_1.001.ttf" id="1_mx6qn"]
+[ext_resource type="Texture2D" uid="uid://dub0v4h06pvg6" path="res://Assets/PNG/Palettes/Owned_palette.png" id="2_00g7p"]
+[ext_resource type="Texture2D" uid="uid://cqo6dmnih4uhf" path="res://Assets/PNG/Player/Coins/Coin1.png" id="2_ctr26"]
+[ext_resource type="Texture2D" uid="uid://2ay8ebtstvls" path="res://Assets/PNG/Player/Coins/Coin2.png" id="3_unlsn"]
+[ext_resource type="AudioStream" uid="uid://cki6um5mcfd7" path="res://Assets/Music/SFX/Blocked.mp3" id="4_fudby"]
+[ext_resource type="Texture2D" uid="uid://b7ievtkhtvre" path="res://Assets/PNG/Player/Coins/Coin3.png" id="4_krs1l"]
+[ext_resource type="Texture2D" uid="uid://02oiv5c1a0ai" path="res://Assets/PNG/Player/Coins/Coin4.png" id="5_4i4sf"]
+[ext_resource type="AudioStream" uid="uid://cvpof1cj1anrb" path="res://Assets/Music/SFX/Bought.mp3" id="5_m2v74"]
+[ext_resource type="Texture2D" uid="uid://0tartmbv4s14" path="res://Assets/PNG/Player/Coins/Coin5.png" id="6_6vq85"]
+[ext_resource type="AudioStream" uid="uid://csh6aya08lcxg" path="res://Assets/Music/SFX/Click.mp3" id="6_n81qn"]
+[ext_resource type="AudioStream" uid="uid://cxbdwuoea2pql" path="res://Assets/Music/Dashbit_main.wav" id="7_r38ll"]
+[ext_resource type="Texture2D" uid="uid://cx7wixtipdys0" path="res://Assets/PNG/Player/Coins/Coin6.png" id="7_xuyij"]
+[ext_resource type="Texture2D" uid="uid://citeoeo6tx6ye" path="res://Assets/PNG/Palettes/PlaceHolder_palette.png" id="8_h5hpp"]
+[ext_resource type="AudioStream" uid="uid://kpj7qnnlvocj" path="res://Assets/Music/Glass.wav" id="8_mddwi"]
+[ext_resource type="AudioStream" uid="uid://dqbc8x65xqrel" path="res://Assets/Music/Kobra.wav" id="9_5abms"]
+[ext_resource type="AudioStream" uid="uid://bon4pl2g4grrq" path="res://Assets/Music/Lectron.wav" id="10_faxjy"]
+[ext_resource type="AudioStream" uid="uid://c84vgaaw3jcwr" path="res://Assets/Music/Riuka.wav" id="11_s7x66"]
+[ext_resource type="AudioStream" uid="uid://cha2tb2l7fyv6" path="res://Assets/Music/Shutdown.wav" id="12_1lqiv"]
+[ext_resource type="Texture2D" uid="uid://degd38etw2xph" path="res://Assets/PNG/UI/Select_border.png" id="12_t0s5e"]
+[ext_resource type="AudioStream" uid="uid://delfiphauimkw" path="res://Assets/Music/Smartwatch.wav" id="13_1i645"]
+[ext_resource type="Texture2D" uid="uid://dottftlqi3jly" path="res://Assets/PNG/Player/Coins/wtht_coins.png" id="13_exxgq"]
+[ext_resource type="AudioStream" uid="uid://cbn2doki354t4" path="res://Assets/Music/Cthulhu.wav" id="14_yua6e"]
+[ext_resource type="AudioStream" uid="uid://bytcxovfk6d8w" path="res://Assets/Music/Sunkin.wav" id="15_unx2a"]
+[ext_resource type="AudioStream" uid="uid://dunvrv615rsku" path="res://Assets/Music/GraveYard.wav" id="16_ik8jo"]
+[ext_resource type="AudioStream" uid="uid://bjw7lvfkfhpbb" path="res://Assets/Music/SnowBall.wav" id="17_jfqbs"]
+[ext_resource type="AudioStream" uid="uid://6ogca4dpeknn" path="res://Assets/Music/Maladiff.wav" id="18_5v85w"]
+[ext_resource type="Resource" uid="uid://d01nh4xi61kau" path="res://Resources/Dashcore.tres" id="18_ttmyq"]
+[ext_resource type="Resource" uid="uid://bc5h17iyv861b" path="res://Resources/Glass.tres" id="19_6k6dh"]
+[ext_resource type="Resource" uid="uid://ct2jbdbu60qmu" path="res://Resources/Kobra.tres" id="20_nvaem"]
+[ext_resource type="Resource" uid="uid://6qud0gq5hscl" path="res://Resources/Lectron.tres" id="21_rjwvh"]
+[ext_resource type="Resource" uid="uid://bv0shrhnntco2" path="res://Resources/Riuka.tres" id="22_p4yhf"]
+[ext_resource type="Resource" uid="uid://c4ld2vpi1fj5a" path="res://Resources/Shutdown.tres" id="23_w0tkd"]
+[ext_resource type="Resource" uid="uid://dv7jcose2c3sv" path="res://Resources/Smartwatch.tres" id="24_bmehp"]
+[ext_resource type="Resource" uid="uid://d1auafkhb1dsg" path="res://Resources/Cuthulu.tres" id="25_g12en"]
+[ext_resource type="Resource" uid="uid://c6yq2iek8llc" path="res://Resources/Sunkin.tres" id="26_gvgha"]
+[ext_resource type="Resource" uid="uid://der8gjw3i0jb5" path="res://Resources/Graveyard.tres" id="27_7ykcu"]
+[ext_resource type="Resource" uid="uid://be5tmpxpj0sww" path="res://Resources/Snowball.tres" id="28_gqrq6"]
+[ext_resource type="Texture2D" uid="uid://31h8fpre2mmx" path="res://Assets/PNG/FlatGray.png" id="29_7ykcu"]
+[ext_resource type="Resource" uid="uid://cokpt8ls17fb4" path="res://Resources/Maladiff.tres" id="29_gqrq6"]
+[ext_resource type="Texture2D" uid="uid://cgo5u8bki06oi" path="res://Assets/PNG/Characters/MusicMan Face1.png" id="29_teu1s"]
+[ext_resource type="Shader" uid="uid://c4rx6w8c4jx6o" path="res://Shaders/white_coloring.tres" id="30_nssb4"]
+[ext_resource type="Texture2D" uid="uid://dwmryrwai07et" path="res://Assets/PNG/Characters/Headset1.png" id="31_ik8jo"]
+[ext_resource type="Texture2D" uid="uid://cfd4ybk2tui4n" path="res://Assets/PNG/Characters/Headset2.png" id="32_r75e6"]
+[ext_resource type="Texture2D" uid="uid://dfu4vmt10tjf6" path="res://Assets/PNG/Characters/Headset3.png" id="33_b2v6u"]
+[ext_resource type="Texture2D" uid="uid://dopjjqqi4uo3y" path="res://Assets/PNG/Characters/Headset4.png" id="34_d811o"]
+[ext_resource type="Texture2D" uid="uid://ccw7nmcsuhm6q" path="res://Assets/PNG/Characters/Headset5.png" id="35_tdhx6"]
+[ext_resource type="Texture2D" uid="uid://ct7m0jao1s4nb" path="res://Assets/PNG/Characters/Headset6.png" id="36_tw3nc"]
+[ext_resource type="Texture2D" uid="uid://bo805ss8rxe3s" path="res://Assets/PNG/Characters/Headset7.png" id="37_ij5g1"]
+[ext_resource type="Texture2D" uid="uid://c2qe6vm0opv3g" path="res://Assets/PNG/Characters/MusicMan Face2.png" id="38_ij5g1"]
+[ext_resource type="Texture2D" uid="uid://cp4xgaclbo2" path="res://Assets/PNG/Characters/MusicMan Face3.png" id="39_2pqus"]
+[ext_resource type="Texture2D" uid="uid://bl4tqgfx54xfv" path="res://Assets/PNG/Characters/MusicMan Face4.png" id="40_2pqus"]
+[ext_resource type="PackedScene" uid="uid://5j3byjst5h7j" path="res://UI/check_shop.tscn" id="40_6k6dh"]
+[ext_resource type="Texture2D" uid="uid://covbfjuxhf7be" path="res://Assets/PNG/Characters/MusicMan Face5.png" id="41_v4v0i"]
+[ext_resource type="Texture2D" uid="uid://eouxh5whtmvl" path="res://Assets/PNG/Characters/MusicMan Face6.png" id="42_g663x"]
+[ext_resource type="Texture2D" uid="uid://bpahmihsthvha" path="res://Assets/PNG/Characters/MusicMan Face7.png" id="43_ttmyq"]
+[ext_resource type="Texture2D" uid="uid://c7kuvxkvi6m5l" path="res://Assets/PNG/Characters/MusicMan Face8.png" id="44_b60ed"]
+[ext_resource type="Theme" uid="uid://dcftmnkkb4mv8" path="res://Assets/Font/main_theme.tres" id="45_v4v0i"]
+[ext_resource type="Script" uid="uid://qigr262024gq" path="res://Scripts/UI/music_man.gd" id="46_g663x"]
+[ext_resource type="Texture2D" uid="uid://hgfhho0n7r03" path="res://Assets/PNG/Characters/MusicMan Face12.png" id="51_bmehp"]
+[ext_resource type="Texture2D" uid="uid://c7g3hofjs2yp1" path="res://Assets/PNG/Characters/MusicMan Face9.png" id="52_g12en"]
+[ext_resource type="Texture2D" uid="uid://l1f7u572hehl" path="res://Assets/PNG/Characters/MusicMan Face11.png" id="53_gvgha"]
+[ext_resource type="Texture2D" uid="uid://d3dq27h0a0yhb" path="res://Assets/PNG/Characters/MusicMan Face13.png" id="54_7ykcu"]
+[ext_resource type="Texture2D" uid="uid://c74lvkatv6ke6" path="res://Assets/PNG/Characters/MusicMan Face10.png" id="55_gqrq6"]
+[ext_resource type="Texture2D" uid="uid://b0jltggr3qaqr" path="res://Assets/PNG/Characters/MusicMan Face22.png" id="59_23cjy"]
+[ext_resource type="Texture2D" uid="uid://rxumqcddktbb" path="res://Assets/PNG/Characters/MusicMan Face23.png" id="60_5rmfi"]
+[ext_resource type="Texture2D" uid="uid://cb3uhrgdfc3w5" path="res://Assets/PNG/Characters/MusicMan Face24.png" id="61_rn1xy"]
+[ext_resource type="AudioStream" uid="uid://qgurdxov7cam" path="res://Assets/Music/SFX/MusicManVoice_2.mp3" id="62_gvgha"]
+[ext_resource type="Texture2D" uid="uid://dhqol2yftyeht" path="res://Assets/PNG/Characters/MusicMan Face25.png" id="62_ycbor"]
+[ext_resource type="AudioStream" uid="uid://b8xqp6pwogget" path="res://Assets/Music/SFX/MusicManLaugh.mp3" id="63_gvgha"]
+[ext_resource type="Texture2D" uid="uid://dhot0kkj6xogd" path="res://Assets/PNG/Characters/MusicMan Face26.png" id="63_pcnjr"]
+[ext_resource type="Texture2D" uid="uid://cvvom0oo41kfl" path="res://Assets/PNG/Characters/MusicMan Face27.png" id="64_42dd3"]
+[ext_resource type="Texture2D" uid="uid://ccsuea3svgyla" path="res://Assets/PNG/TransText.png" id="64_gvgha"]
+[ext_resource type="Texture2D" uid="uid://7ao35v36oki2" path="res://Assets/PNG/Characters/MusicMan Face15.png" id="64_n46gi"]
+[ext_resource type="Texture2D" uid="uid://d4guahdaqs0wt" path="res://Assets/PNG/Characters/MusicMan Face28.png" id="65_3fnuu"]
+[ext_resource type="Texture2D" uid="uid://cfpjoaljaplqo" path="res://Assets/PNG/Characters/MusicMan Face16.png" id="65_gnttv"]
+[ext_resource type="Texture2D" uid="uid://p386tymcjxy" path="res://Assets/PNG/Characters/MusicMan Face17.png" id="66_i034k"]
+[ext_resource type="Texture2D" uid="uid://b13cfrdglgkiw" path="res://Assets/PNG/Characters/MusicMan Face29.png" id="66_v80yh"]
+[ext_resource type="Texture2D" uid="uid://ct8c32n1tpp86" path="res://Assets/PNG/Characters/MusicMan Face18.png" id="67_vbyo1"]
+[ext_resource type="Texture2D" uid="uid://fce7b2ia4xki" path="res://Assets/PNG/Characters/MusicMan Face30.png" id="67_yoqsn"]
+[ext_resource type="Texture2D" uid="uid://bg6rbsng4qg7p" path="res://Assets/PNG/Characters/MusicMan Face31.png" id="68_bh0xq"]
+[ext_resource type="Texture2D" uid="uid://d340mnluq5hs0" path="res://Assets/PNG/Characters/MusicMan Face19.png" id="68_di7iv"]
+[ext_resource type="Texture2D" uid="uid://cf2w06pf4m5pf" path="res://Assets/PNG/Characters/MusicMan Face20.png" id="69_nqcmu"]
+[ext_resource type="Texture2D" uid="uid://daqhcmdrwqsb7" path="res://Assets/PNG/Characters/MusicMan Face32.png" id="69_xxl16"]
+[ext_resource type="Texture2D" uid="uid://b3kqqfqjja8sx" path="res://Assets/PNG/Characters/MusicMan Face21.png" id="70_78qdu"]
+[ext_resource type="Texture2D" uid="uid://bfoy0o3l66lnh" path="res://Assets/PNG/Characters/MusicMan Face33.png" id="70_x387e"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_h3tam"]
+load_path = "res://.godot/imported/Menu_button.png-e74d5bd99bcc0292b8260a4dd1112cca.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_70kol"]
+load_path = "res://.godot/imported/Menu_button.png-e74d5bd99bcc0292b8260a4dd1112cca.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jig5q"]
+load_path = "res://.godot/imported/Menu_button.png-e74d5bd99bcc0292b8260a4dd1112cca.ctex"
+
+[sub_resource type="LabelSettings" id="LabelSettings_lprjl"]
+font = ExtResource("1_mx6qn")
+font_size = 470
+font_color = Color(1, 0.901961, 0, 1)
+outline_size = 80
+outline_color = Color(0.160784, 0.160784, 0.160784, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8cfsh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ctr26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_unlsn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_krs1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4i4sf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6vq85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xuyij")
+}],
+"loop": true,
+"name": &"Roll",
+"speed": 10.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_on5n7"]
+bg_color = Color(0, 0.16078432, 0.16078432, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6k6dh"]
+shader = ExtResource("30_nssb4")
+shader_parameter/WhiteColor = Color(0.3254902, 0.3254902, 0.8509804, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2pqus"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31_ik8jo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_r75e6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_b2v6u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_d811o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_tdhx6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_tw3nc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_ij5g1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nvaem"]
+shader = ExtResource("30_nssb4")
+shader_parameter/WhiteColor = Color(1, 1, 1, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ylrn8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_teu1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_teu1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_teu1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_teu1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_teu1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_teu1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_teu1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_teu1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_teu1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_teu1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_teu1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_ij5g1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_2pqus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_ij5g1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_teu1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_teu1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_teu1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_ij5g1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_2pqus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_ij5g1")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("51_bmehp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_g12en")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_gvgha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_7ykcu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_gqrq6")
+}],
+"loop": true,
+"name": &"Laugh",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("59_23cjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_5rmfi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_rn1xy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_ycbor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_pcnjr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_42dd3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_3fnuu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_v80yh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_yoqsn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_bh0xq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_xxl16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_ycbor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_pcnjr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_42dd3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_3fnuu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_v80yh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_yoqsn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_bh0xq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_xxl16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_ycbor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_pcnjr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_42dd3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_3fnuu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_v80yh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_yoqsn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_bh0xq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_xxl16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_ycbor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_pcnjr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_42dd3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_x387e")
+}],
+"loop": false,
+"name": &"SillyFace",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("44_b60ed")
+}],
+"loop": true,
+"name": &"Sure",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("40_2pqus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_v4v0i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_g663x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_ttmyq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_b60ed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_g663x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_ttmyq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_v4v0i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_v4v0i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_b60ed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_g663x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_ttmyq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_b60ed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_g663x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_v4v0i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_2pqus")
+}],
+"loop": true,
+"name": &"Talking",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("64_n46gi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_gnttv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_i034k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_vbyo1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_di7iv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_nqcmu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_78qdu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_n46gi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_gnttv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_i034k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_vbyo1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_di7iv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_nqcmu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_78qdu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_teu1s")
+}],
+"loop": false,
+"name": &"Whisle",
+"speed": 15.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6k6dh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nvaem"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rjwvh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p4yhf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w0tkd"]
+
+[sub_resource type="Animation" id="Animation_pyt68"]
+resource_name = "Dozer"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%MusicFace:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"SillyFace"]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("%MusicFace")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"SillyFace", 1.0, false],
+"method": &"play"
+}]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("%MusicFace:rotation")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.15000004, 0.3, 0.5, 0.6999999, 0.85, 1),
+"transitions": PackedFloat32Array(1, 1, 2, 2, 2, 2, 1),
+"update": 0,
+"values": [0.0, 0.0, -0.1134464, 0.10471975511965978, -0.1134464, -0.1134464, 0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("%MusicFace:position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.15000004, 0.3, 0.5, 0.6999999, 0.85, 1),
+"transitions": PackedFloat32Array(2, 2, 2, 2, 2, 2, 1),
+"update": 0,
+"values": [Vector2(90, 166), Vector2(90, 166), Vector2(95, 166), Vector2(85, 166), Vector2(95, 166), Vector2(95, 166), Vector2(95, 166)]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("%MusicManDialogue")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.9, 0.9999999),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"realease"
+}, {
+"args": [],
+"method": &"send_message"
+}]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("%Dialog:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_5v85w"]
+resource_name = "Idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/MusicFace:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(2, 1),
+"update": 0,
+"values": [Vector2(84, 166), Vector2(84, 156)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/MusicFace")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"Idle", 1.0, false],
+"method": &"play"
+}]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/MusicFace:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/MusicFace:animation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Idle"]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/Dialog:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_hovd2"]
+resource_name = "Laugh"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/MusicFace:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Laugh"]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/MusicFace")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"Laugh", 1.0, false],
+"method": &"play"
+}]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/MusicFace:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.70000005, 0.8, 0.90000004, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2(90, 166), Vector2(91, 133), Vector2(112, 145), Vector2(72, 163), Vector2(108, 142), Vector2(84, 122), Vector2(119, 116), Vector2(91, 133), Vector2(112, 145), Vector2(72, 163), Vector2(84, 166)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/MusicFace:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.70000005, 0.8, 0.90000004, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0.20943952, -0.20943952, 0.20943952, -0.20943952, 0.20943952, -0.20943952, 0.20943952, -0.20943952, 0.20943952, -0.20943952, 0.0]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("MusicManDialogue")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.95, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"values": [{
+"args": [],
+"method": &"bully_player"
+}, {
+"args": [],
+"method": &"realease"
+}, {
+"args": [],
+"method": &"send_message"
+}]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/Dialog:visible_ratio")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CanvasLayer/Dialog:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.05, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+
+[sub_resource type="Animation" id="Animation_cwawa"]
+resource_name = "RESET"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/MusicFace:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(84, 121)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/MusicFace:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/MusicFace:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Idle"]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/Dialog:visible_ratio")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/MusicFace:animation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Idle"]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/MusicFace:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(84, 121)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CanvasLayer/MusicFace:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.20943952]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CanvasLayer/Dialog:visible_ratio")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CanvasLayer/Dialog:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("%MusicFace:animation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Whisle"]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("%MusicFace:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(84, 121)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("%MusicFace:rotation")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.17453292]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("%Dialog:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_lx2lb"]
+resource_name = "Talk"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/MusicFace:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.099999994, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.90000004),
+"transitions": PackedFloat32Array(0.5, 1, 0.5, 1, 0.5, 1, 0.5, 1, 0.5, 1),
+"update": 0,
+"values": [0.20943952, 0.0, -0.20943952, 0.0, 0.20943952, 0.0, -0.20943952, 0.0, 0.20943952, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/MusicFace:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.099999994, 0.2, 0.3, 0.4, 0.5, 0.6, 0.70000005, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 0.5, 1, 0.5, 1, 0.5, 1, 0.5, 1, 0.5),
+"update": 0,
+"values": [Vector2(94, 166), Vector2(84, 166), Vector2(74, 166), Vector2(84, 166), Vector2(94, 166), Vector2(84, 166), Vector2(74, 166), Vector2(84, 166), Vector2(94, 166), Vector2(84, 166)]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/MusicFace")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"Talking", 1.0, false],
+"method": &"play"
+}]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/MusicFace:animation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Talking"]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/Dialog:visible_ratio")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/Dialog:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.05),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/6/type = "method"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("MusicManDialogue")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"realease"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_7kvp0"]
+resource_name = "Whisle"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%MusicFace:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Whisle"]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("%MusicFace")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"Whisle", 1.0, false],
+"method": &"play"
+}]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("%MusicFace:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.25, 0.5, 0.6, 0.85),
+"transitions": PackedFloat32Array(0.5, 1, 2, 1, 2, 1),
+"update": 0,
+"values": [Vector2(84, 166), Vector2(78, 166), Vector2(110, 120), Vector2(78, 166), Vector2(73, 130), Vector2(84, 166)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("%MusicFace:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.25, 0.5, 0.6, 0.85),
+"transitions": PackedFloat32Array(1, 1, 2, 1, 2, 1),
+"update": 0,
+"values": [0.0, 0.17453292, -0.08726646, 0.17453292, -0.08726646, 0.0]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("%MusicManDialogue")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.9, 1),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"realease"
+}, {
+"args": [],
+"method": &"send_message"
+}]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("%Dialog:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.65000004),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cwawa"]
+_data = {
+&"Dozer": SubResource("Animation_pyt68"),
+&"Idle": SubResource("Animation_5v85w"),
+&"Laugh": SubResource("Animation_hovd2"),
+&"RESET": SubResource("Animation_cwawa"),
+&"Talk": SubResource("Animation_lx2lb"),
+&"Whisle": SubResource("Animation_7kvp0")
+}
+
+[sub_resource type="Animation" id="Animation_6k6dh"]
+resource_name = "Change"
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/WhiteDisc:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_nvaem"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/WhiteDisc:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nvaem"]
+_data = {
+&"Change": SubResource("Animation_6k6dh"),
+&"RESET": SubResource("Animation_nvaem")
+}
+
+[sub_resource type="Animation" id="Animation_llj6b"]
+resource_name = "RESET"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Lose_menu/ScrollContainer/Songs_flow/WthtCoins:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Lose_menu/ScrollContainer/Songs_flow/WthtCoins:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Lose_menu/Coins:label_settings:font_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 0.901961, 0, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Lose_menu/ScrollContainer/Songs_flow/WthtCoins:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_thw82"]
+resource_name = "Without"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Lose_menu/ScrollContainer/Songs_flow/WthtCoins:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.0872665, 0.0872665, -0.0872665, 0.0872665]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Lose_menu/ScrollContainer/Songs_flow/WthtCoins:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.7, 1),
+"transitions": PackedFloat32Array(1, 0.5, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Lose_menu/Coins:label_settings:font_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 2, 0.5, 2, 1),
+"update": 0,
+"values": [Color(1, 0.901961, 0, 1), Color(0.988235, 0, 0, 1), Color(1, 0.901961, 0, 1), Color(0.988235, 0, 0, 1), Color(1, 0.901961, 0, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Lose_menu/ScrollContainer/Songs_flow/WthtCoins:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eo3jb"]
+_data = {
+&"RESET": SubResource("Animation_llj6b"),
+&"Without": SubResource("Animation_thw82")
+}
+
+[sub_resource type="Animation" id="Animation_wlwkv"]
+resource_name = "In"
+length = 0.35
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dark/Dark:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(0.5, 2),
+"update": 0,
+"values": [Vector2(1100, 800), Vector2(360, 800)]
+}
+
+[sub_resource type="Animation" id="Animation_a23qw"]
+resource_name = "Out"
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dark/Dark:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(2, 0.5),
+"update": 0,
+"values": [Vector2(360, 800), Vector2(-380, 800)]
+}
+
+[sub_resource type="Animation" id="Animation_w17ar"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dark/Dark:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1100, 800)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6cufk"]
+_data = {
+&"In": SubResource("Animation_wlwkv"),
+&"Out": SubResource("Animation_a23qw"),
+&"RESET": SubResource("Animation_w17ar")
+}
+
+[node name="Songs" type="Control" unique_id=2078671907 node_paths=PackedStringArray("song")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_78ha7")
+song = NodePath("Song")
+owned_texture = ExtResource("2_00g7p")
+normal_texture = ExtResource("8_h5hpp")
+blocked = ExtResource("4_fudby")
+bought = ExtResource("5_m2v74")
+click = ExtResource("6_n81qn")
+Dashcore = ExtResource("7_r38ll")
+Glass = ExtResource("8_mddwi")
+Kobra = ExtResource("9_5abms")
+Lectron = ExtResource("10_faxjy")
+Riuka = ExtResource("11_s7x66")
+Shutdown = ExtResource("12_1lqiv")
+Smartwatch = ExtResource("13_1i645")
+Cthulhu = ExtResource("14_yua6e")
+Sunkin = ExtResource("15_unx2a")
+Graveyard = ExtResource("16_ik8jo")
+Snowball = ExtResource("17_jfqbs")
+Maladiff = ExtResource("18_5v85w")
+songs_res = [ExtResource("18_ttmyq"), ExtResource("19_6k6dh"), ExtResource("20_nvaem"), ExtResource("21_rjwvh"), ExtResource("22_p4yhf"), ExtResource("23_w0tkd"), ExtResource("24_bmehp"), ExtResource("25_g12en"), ExtResource("26_gvgha"), ExtResource("27_7ykcu"), ExtResource("28_gqrq6"), ExtResource("29_gqrq6")]
+
+[node name="Lose_menu" type="CanvasLayer" parent="." unique_id=1194892386]
+layer = 2
+
+[node name="Background" type="TextureRect" parent="Lose_menu" unique_id=506161770]
+modulate = Color(0, 1, 1, 1)
+offset_right = 18.0
+offset_bottom = 40.0
+scale = Vector2(40, 40)
+texture = ExtResource("29_7ykcu")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Lose_menu" unique_id=1310787909]
+unique_name_in_owner = true
+offset_left = 51.0
+offset_top = 145.0
+offset_right = 687.0
+offset_bottom = 1391.0
+vertical_scroll_mode = 2
+
+[node name="Songs_flow" type="FlowContainer" parent="Lose_menu/ScrollContainer" unique_id=939635076]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/h_separation = 335
+theme_override_constants/v_separation = 430
+alignment = 1
+
+[node name="WthtCoins" type="Sprite2D" parent="Lose_menu/ScrollContainer/Songs_flow" unique_id=301265107]
+visible = false
+modulate = Color(1, 1, 1, 0)
+z_index = 1
+position = Vector2(667, 487)
+scale = Vector2(12, 12)
+texture = ExtResource("13_exxgq")
+
+[node name="Blank" type="Control" parent="Lose_menu/ScrollContainer/Songs_flow" unique_id=655604482]
+layout_mode = 2
+
+[node name="Blank2" type="Control" parent="Lose_menu/ScrollContainer/Songs_flow" unique_id=1156674114]
+layout_mode = 2
+
+[node name="SelectBorder" type="Sprite2D" parent="Lose_menu/ScrollContainer" unique_id=1472799240]
+unique_name_in_owner = true
+position = Vector2(146, 430)
+scale = Vector2(14.4, 14.4)
+texture = ExtResource("12_t0s5e")
+
+[node name="Depth_control" type="Label" parent="Lose_menu/ScrollContainer" unique_id=1936828515]
+unique_name_in_owner = true
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="Menu" type="TextureButton" parent="Lose_menu" unique_id=1709517647]
+unique_name_in_owner = true
+z_index = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = 700.0
+offset_right = 16.0
+offset_bottom = 716.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(5, 5)
+pivot_offset = Vector2(8, 8.84615)
+action_mode = 0
+texture_normal = SubResource("CompressedTexture2D_h3tam")
+texture_pressed = SubResource("CompressedTexture2D_70kol")
+texture_hover = SubResource("CompressedTexture2D_jig5q")
+
+[node name="SongsPlaceholder" type="Panel" parent="Lose_menu" unique_id=16449527]
+modulate = Color(0.729412, 0.729412, 0.729412, 1)
+z_index = 1
+offset_top = 244.0
+offset_right = 71.99999
+offset_bottom = 260.7
+scale = Vector2(10, 10)
+theme = ExtResource("45_v4v0i")
+
+[node name="Coins" type="Label" parent="Lose_menu" unique_id=1775539743]
+unique_name_in_owner = true
+z_index = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 112.99999
+offset_top = -1479.0
+offset_right = 2916.685
+offset_bottom = -1065.0
+grow_vertical = 0
+scale = Vector2(0.20544392, 0.20544392)
+pivot_offset = Vector2(0, 201.957)
+text = "0"
+label_settings = SubResource("LabelSettings_lprjl")
+vertical_alignment = 1
+
+[node name="Coins_visual" type="AnimatedSprite2D" parent="Lose_menu" unique_id=2128959569]
+z_index = 1
+position = Vector2(64, 328)
+scale = Vector2(4.857485, 4.857485)
+sprite_frames = SubResource("SpriteFrames_8cfsh")
+animation = &"Roll"
+autoplay = "Roll"
+
+[node name="CheckShop" parent="Lose_menu" unique_id=778774040 instance=ExtResource("40_6k6dh")]
+unique_name_in_owner = true
+offset_right = -720.0
+offset_bottom = -1600.0
+
+[node name="CanvasLayer" parent="Lose_menu/CheckShop" index="0"]
+layer = 2
+
+[node name="Chains" parent="Lose_menu/CheckShop/CanvasLayer" index="1"]
+self_modulate = Color(0.03529412, 0.7882353, 0.6862745, 1)
+
+[node name="Back" parent="Lose_menu/CheckShop/CanvasLayer" index="2"]
+self_modulate = Color(0.03529412, 0.7882353, 0.6862745, 1)
+
+[node name="MusicMan" type="Control" parent="Lose_menu" unique_id=1746421973]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Lose_menu/MusicMan" unique_id=435434001]
+layer = 3
+
+[node name="TopPanel" type="Panel" parent="Lose_menu/MusicMan/CanvasLayer" unique_id=648028170]
+offset_right = 720.0
+offset_bottom = 244.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_on5n7")
+
+[node name="Disc" type="AnimatedSprite2D" parent="Lose_menu/MusicMan/CanvasLayer" unique_id=596746653]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_6k6dh")
+position = Vector2(641, 163)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_2pqus")
+autoplay = "default"
+frame_progress = 0.6546037
+
+[node name="WhiteDisc" type="Sprite2D" parent="Lose_menu/MusicMan/CanvasLayer" unique_id=1393256633]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(18.892157, 18.892157, 18.892157, 1)
+material = SubResource("ShaderMaterial_nvaem")
+position = Vector2(641, 163)
+scale = Vector2(3, 3)
+texture = ExtResource("31_ik8jo")
+
+[node name="MusicFace" type="AnimatedSprite2D" parent="Lose_menu/MusicMan/CanvasLayer" unique_id=2134766097]
+unique_name_in_owner = true
+z_index = 1
+position = Vector2(84, 121)
+rotation = 0.17453292
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_ylrn8")
+animation = &"Whisle"
+
+[node name="Dialog" type="RichTextLabel" parent="Lose_menu/MusicMan/CanvasLayer" unique_id=249110870]
+unique_name_in_owner = true
+visible = false
+z_index = 1
+offset_left = 177.0
+offset_top = 103.0
+offset_right = 567.0
+offset_bottom = 232.0
+theme = ExtResource("45_v4v0i")
+theme_override_colors/default_color = Color(0.05426217, 0.9216497, 0.80362743, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=red][shake]LOSER"
+scroll_active = false
+autowrap_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters_behavior = 1
+
+[node name="Respond" type="Button" parent="Lose_menu/MusicMan/CanvasLayer" unique_id=1009868582]
+z_index = 3
+offset_right = 722.0
+offset_bottom = 410.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6k6dh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nvaem")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_rjwvh")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_p4yhf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w0tkd")
+flat = true
+
+[node name="MusicManDialogue" type="Node" parent="Lose_menu/MusicMan" unique_id=2047868300]
+unique_name_in_owner = true
+script = ExtResource("46_g663x")
+c_max = 3
+n_min = 4
+n_max = 17
+p_min = 18
+p_max = 23
+g_min = 24
+g_max = 28
+b_min = 29
+b_max = 32
+s_min = 33
+s_max = 37
+
+[node name="Check" type="Timer" parent="Lose_menu/MusicMan/MusicManDialogue" unique_id=1127251424]
+wait_time = 0.5
+one_shot = true
+
+[node name="RandomInteraction" type="Timer" parent="Lose_menu/MusicMan/MusicManDialogue" unique_id=1625617721]
+wait_time = 10.0
+autostart = true
+
+[node name="Anims" type="AnimationPlayer" parent="Lose_menu/MusicMan" unique_id=683973221]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_cwawa")
+next/Dozer = &"Idle"
+next/Laugh = &"Idle"
+next/Talk = &"Idle"
+next/Whisle = &"Idle"
+
+[node name="DiscAnims" type="AnimationPlayer" parent="Lose_menu/MusicMan" unique_id=1282694131]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_nvaem")
+
+[node name="Voice" type="AudioStreamPlayer" parent="Lose_menu/MusicMan" unique_id=351396347]
+unique_name_in_owner = true
+stream = ExtResource("62_gvgha")
+
+[node name="Laugh" type="AudioStreamPlayer" parent="Lose_menu/MusicMan" unique_id=541317110]
+unique_name_in_owner = true
+stream = ExtResource("63_gvgha")
+volume_db = -1.0
+
+[node name="Dark" type="CanvasLayer" parent="." unique_id=1977396425]
+layer = 3
+
+[node name="Dark" type="Sprite2D" parent="Dark" unique_id=1038677058]
+z_index = 2
+position = Vector2(1100, 800)
+scale = Vector2(40, 40)
+texture = ExtResource("64_gvgha")
+
+[node name="Song" type="AudioStreamPlayer" parent="." unique_id=606890567]
+volume_db = -3.0
+autoplay = true
+
+[node name="Without_coins" type="AnimationPlayer" parent="." unique_id=2080295052]
+libraries/ = SubResource("AnimationLibrary_eo3jb")
+
+[node name="Transition" type="AnimationPlayer" parent="." unique_id=253405757]
+libraries/ = SubResource("AnimationLibrary_6cufk")
+autoplay = &"Out"
+
+[connection signal="button_down" from="Lose_menu/Menu" to="." method="_on_menu_button_down"]
+[connection signal="no" from="Lose_menu/CheckShop" to="." method="forget"]
+[connection signal="yes" from="Lose_menu/CheckShop" to="." method="really_buy_song"]
+[connection signal="pressed" from="Lose_menu/MusicMan/CanvasLayer/Respond" to="Lose_menu/MusicMan/MusicManDialogue" method="_on_respond_pressed"]
+[connection signal="timeout" from="Lose_menu/MusicMan/MusicManDialogue/Check" to="Lose_menu/MusicMan/MusicManDialogue" method="_on_check_timeout"]
+[connection signal="timeout" from="Lose_menu/MusicMan/MusicManDialogue/RandomInteraction" to="Lose_menu/MusicMan/MusicManDialogue" method="_on_random_interaction_timeout"]
+[connection signal="animation_finished" from="Transition" to="." method="_on_transition_animation_finished"]
+
+[editable path="Lose_menu/CheckShop"]

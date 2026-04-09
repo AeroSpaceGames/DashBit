@@ -1,0 +1,1106 @@
+[gd_scene format=3 uid="uid://b6k6mxdowmd4y"]
+
+[ext_resource type="FontFile" uid="uid://dumgagcnbw7j6" path="res://Assets/Font/VCR_OSD_MONO_1.001.ttf" id="1_ro6g2"]
+[ext_resource type="Script" uid="uid://tw6ju0xmann7" path="res://Scripts/UI/shop.gd" id="1_sja7u"]
+[ext_resource type="Texture2D" uid="uid://cqo6dmnih4uhf" path="res://Assets/PNG/Player/Coins/Coin1.png" id="3_s365r"]
+[ext_resource type="AudioStream" uid="uid://cki6um5mcfd7" path="res://Assets/Music/SFX/Blocked.mp3" id="4_7x4fc"]
+[ext_resource type="Texture2D" uid="uid://2ay8ebtstvls" path="res://Assets/PNG/Player/Coins/Coin2.png" id="4_cvxca"]
+[ext_resource type="Texture2D" uid="uid://31h8fpre2mmx" path="res://Assets/PNG/FlatGray.png" id="5_6lkkh"]
+[ext_resource type="Texture2D" uid="uid://b7ievtkhtvre" path="res://Assets/PNG/Player/Coins/Coin3.png" id="5_i4mj1"]
+[ext_resource type="AudioStream" uid="uid://cvpof1cj1anrb" path="res://Assets/Music/SFX/Bought.mp3" id="5_s7c6w"]
+[ext_resource type="Theme" uid="uid://dcftmnkkb4mv8" path="res://Assets/Font/main_theme.tres" id="6_b5n7m"]
+[ext_resource type="AudioStream" uid="uid://csh6aya08lcxg" path="res://Assets/Music/SFX/Click.mp3" id="6_bqbqh"]
+[ext_resource type="Texture2D" uid="uid://02oiv5c1a0ai" path="res://Assets/PNG/Player/Coins/Coin4.png" id="6_sacdo"]
+[ext_resource type="Texture2D" uid="uid://0tartmbv4s14" path="res://Assets/PNG/Player/Coins/Coin5.png" id="7_5av1w"]
+[ext_resource type="Texture2D" uid="uid://dp5cnobv6u757" path="res://Assets/PNG/UI/Shop_placeholder.png" id="7_vanx1"]
+[ext_resource type="Texture2D" uid="uid://cx7wixtipdys0" path="res://Assets/PNG/Player/Coins/Coin6.png" id="8_5tk6q"]
+[ext_resource type="Texture2D" uid="uid://degd38etw2xph" path="res://Assets/PNG/UI/Select_border.png" id="11_lx7gl"]
+[ext_resource type="Texture2D" uid="uid://d37now5ajigdc" path="res://Assets/PNG/UI/Standar.png" id="15_y3e28"]
+[ext_resource type="Texture2D" uid="uid://ccsuea3svgyla" path="res://Assets/PNG/TransText.png" id="16_pdan6"]
+[ext_resource type="Texture2D" uid="uid://ba1nlu3xesix3" path="res://Assets/PNG/Characters/ShopMan Face1.png" id="18_7lbcj"]
+[ext_resource type="Texture2D" uid="uid://bl7uibrqog3vi" path="res://Assets/PNG/Characters/ShopShelf.png" id="18_28ln3"]
+[ext_resource type="Texture2D" uid="uid://dottftlqi3jly" path="res://Assets/PNG/Player/Coins/wtht_coins.png" id="18_ewl1g"]
+[ext_resource type="Texture2D" uid="uid://d0e5sm22ajlkv" path="res://Assets/PNG/Characters/ShopMan Face12.png" id="18_lh2g5"]
+[ext_resource type="PackedScene" uid="uid://5j3byjst5h7j" path="res://UI/check_shop.tscn" id="18_vabkk"]
+[ext_resource type="Shader" uid="uid://c4rx6w8c4jx6o" path="res://Shaders/white_coloring.tres" id="18_xgvnb"]
+[ext_resource type="Texture2D" uid="uid://dqyoxmqv8q5wi" path="res://Assets/PNG/Characters/ShopMan Face5.png" id="19_wm7kg"]
+[ext_resource type="Texture2D" uid="uid://bviq6t7bdo5fa" path="res://Assets/PNG/Characters/ShopMan Face13.png" id="19_xgvnb"]
+[ext_resource type="Texture2D" uid="uid://cmck7yomfxwr4" path="res://Assets/PNG/Characters/ShopMan Face14.png" id="20_28ln3"]
+[ext_resource type="Texture2D" uid="uid://tececrpfk0o7" path="res://Assets/PNG/Characters/ShopMan Face6.png" id="20_ixyro"]
+[ext_resource type="Texture2D" uid="uid://bfsvudjt3w7hm" path="res://Assets/PNG/Characters/ShopMan Face7.png" id="21_6pn67"]
+[ext_resource type="Texture2D" uid="uid://d0xwi1lof81dn" path="res://Assets/PNG/Characters/ShopMan Face15.png" id="21_tmow7"]
+[ext_resource type="Texture2D" uid="uid://b5oh8r2csysdr" path="res://Assets/PNG/Characters/ShopMan Face8.png" id="22_j4y4s"]
+[ext_resource type="Texture2D" uid="uid://cybohfasuiyhj" path="res://Assets/PNG/Characters/ShopMan Face9.png" id="23_g7fiv"]
+[ext_resource type="Texture2D" uid="uid://dylqp1yfxxc28" path="res://Assets/PNG/Characters/ShopMan Face3.png" id="24_6pn67"]
+[ext_resource type="Texture2D" uid="uid://co1l3gln5vjiw" path="res://Assets/PNG/Characters/ShopMan Face4.png" id="25_j4y4s"]
+[ext_resource type="Texture2D" uid="uid://b2d6ysrdhs2g7" path="res://Assets/PNG/Characters/ShopMan Face2.png" id="26_g7fiv"]
+[ext_resource type="Texture2D" uid="uid://cedgyqwyadw2p" path="res://Assets/PNG/Characters/ShopMan Face10.png" id="28_d5v8k"]
+[ext_resource type="AudioStream" uid="uid://bmnmnl4h4tgwh" path="res://Assets/Music/Shopbit.wav" id="28_qju7s"]
+[ext_resource type="Texture2D" uid="uid://c2oxkiejevklx" path="res://Assets/PNG/Characters/ShopMan Face11.png" id="29_vabkk"]
+[ext_resource type="Script" uid="uid://b88mcytgkdlpl" path="res://Scripts/UI/shop_man.gd" id="35_d5v8k"]
+[ext_resource type="AudioStream" uid="uid://deijtjj4ds33k" path="res://Assets/Music/SFX/DarkHorus Voice.mp3" id="37_vabkk"]
+[ext_resource type="AudioStream" uid="uid://cd0w1khhxeiua" path="res://Assets/Music/SFX/Horus Cry.mp3" id="38_yq4nu"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xdk7y"]
+load_path = "res://.godot/imported/Menu_button.png-e74d5bd99bcc0292b8260a4dd1112cca.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_73fhg"]
+load_path = "res://.godot/imported/Menu_button.png-e74d5bd99bcc0292b8260a4dd1112cca.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_21gni"]
+load_path = "res://.godot/imported/Menu_button.png-e74d5bd99bcc0292b8260a4dd1112cca.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kw7gb"]
+texture = ExtResource("7_vanx1")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+texture_margin_bottom = 5.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_wnm6w"]
+font = ExtResource("1_ro6g2")
+font_size = 470
+font_color = Color(1, 0.901961, 0, 1)
+outline_size = 80
+outline_color = Color(0.160784, 0.160784, 0.160784, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i7apf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_s365r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cvxca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_i4mj1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_sacdo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5av1w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5tk6q")
+}],
+"loop": true,
+"name": &"Roll",
+"speed": 10.0
+}]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y3e28"]
+content_margin_left = 24.0
+content_margin_top = 24.0
+content_margin_right = 24.0
+content_margin_bottom = 24.0
+texture = ExtResource("15_y3e28")
+expand_margin_left = 24.0
+expand_margin_right = 150.0
+expand_margin_bottom = 24.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_lh2g5"]
+line_spacing = -185.0
+font = ExtResource("1_ro6g2")
+font_size = 200
+font_color = Color(0.160784, 0.160784, 0.160784, 1)
+outline_size = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6pn67"]
+bg_color = Color(0.16078432, 0.16078432, 0, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_28ln3"]
+shader = ExtResource("18_xgvnb")
+shader_parameter/WhiteColor = Color(0.84705883, 0.84705883, 0.84705883, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b5n7m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_lh2g5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_xgvnb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_28ln3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_tmow7")
+}],
+"loop": true,
+"name": &"Cry",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_7lbcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7lbcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7lbcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7lbcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7lbcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7lbcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7lbcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7lbcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7lbcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7lbcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_wm7kg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ixyro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_6pn67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_j4y4s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_g7fiv")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_d5v8k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_d5v8k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_vabkk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_vabkk")
+}],
+"loop": true,
+"name": &"Sure",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_6pn67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7lbcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_j4y4s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_g7fiv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7lbcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_g7fiv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7lbcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_6pn67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_j4y4s")
+}],
+"loop": true,
+"name": &"Talk",
+"speed": 15.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lh2g5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xgvnb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_28ln3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tmow7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d5v8k"]
+
+[sub_resource type="Animation" id="Animation_yq4nu"]
+resource_name = "Cry"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%Dialog:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/SkinFace:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1),
+"transitions": PackedFloat32Array(1.5, 0.5, 1.5, 0.5, 1.5),
+"update": 0,
+"values": [Vector2(91, 166), Vector2(91, 176), Vector2(91, 166), Vector2(91, 176), Vector2(91, 166)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/SkinFace:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Cry"]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/SkinFace")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.05),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"stop"
+}, {
+"args": [&"Cry", 1.0, false],
+"method": &"play"
+}]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ShopManDialogues")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"bully_player"
+}, {
+"args": [],
+"method": &"realease"
+}]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("%SkinFace:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_tmow7"]
+resource_name = "Idle"
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/SkinFace:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Idle"]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/SkinFace")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.05),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"stop"
+}, {
+"args": [&"Idle", 1.0, false],
+"method": &"play"
+}]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/SkinFace:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(2, 0.5),
+"update": 0,
+"values": [Vector2(91, 166), Vector2(91, 156)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("%SkinFace:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_d5v8k"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/SkinFace:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Idle"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/SkinFace:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(91, 119)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("%Dialog:visible_ratio")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/SkinFace:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("%SkinFace:animation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Sure"]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("%SkinFace:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4, 4)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("%SkinFace:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_o5scn"]
+resource_name = "Sure"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%Dialog:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("%SkinFace:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Sure"]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("%SkinFace")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"Sure", 1.0, false],
+"method": &"play"
+}]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("%ShopManDialogues")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"realease"
+}]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("%SkinFace:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.70000005, 0.8, 0.90000004, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2(4, 4), Vector2(4.2, 4.2), Vector2(4, 4), Vector2(4.2, 4.2), Vector2(4, 4), Vector2(4.2, 4.2), Vector2(4, 4), Vector2(4.2, 4.2), Vector2(4, 4), Vector2(4.2, 4.2), Vector2(4, 4)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("%SkinFace:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_vabkk"]
+resource_name = "Talk"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/SkinFace:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Talk"]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/SkinFace")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.05),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"stop"
+}, {
+"args": [&"Talk", 1.0, false],
+"method": &"play"
+}]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("%Dialog:visible_ratio")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/SkinFace:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3, 0.4, 0.6, 0.70000005, 0.90000004, 1),
+"transitions": PackedFloat32Array(2, 2, 2, 2, 2, 2, 2, 2),
+"update": 0,
+"values": [Vector2(100, 166), Vector2(85, 166), Vector2(85, 166), Vector2(100, 166), Vector2(100, 166), Vector2(85, 166), Vector2(85, 166), Vector2(91, 166)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/SkinFace:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3, 0.4, 0.6, 0.70000005, 0.90000004, 1),
+"transitions": PackedFloat32Array(1, 0.5, 0.5, 1, 1, 0.5, 0.5, 1),
+"update": 0,
+"values": [0.08726646, -0.08726646259971647, -0.08726646259971647, 0.08726646, 0.08726646, -0.08726646259971647, -0.08726646259971647, 0.0]
+}
+tracks/5/type = "method"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ShopManDialogues")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.95),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"realease"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vabkk"]
+_data = {
+&"Cry": SubResource("Animation_yq4nu"),
+&"Idle": SubResource("Animation_tmow7"),
+&"RESET": SubResource("Animation_d5v8k"),
+&"Sure": SubResource("Animation_o5scn"),
+&"Talk": SubResource("Animation_vabkk")
+}
+
+[sub_resource type="Animation" id="Animation_uxku7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Lose_menu/ScrollContainer/Shop_flow/WthtCoins:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Lose_menu/ScrollContainer/Shop_flow/WthtCoins:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Lose_menu/Coins:label_settings:font_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 0.901961, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_mfrsa"]
+resource_name = "Without"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Lose_menu/ScrollContainer/Shop_flow/WthtCoins:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.0872665, 0.0872665, -0.0872665, 0.0872665]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Lose_menu/ScrollContainer/Shop_flow/WthtCoins:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.7, 1),
+"transitions": PackedFloat32Array(1, 0.5, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Lose_menu/Coins:label_settings:font_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 2, 0.5, 2, 1),
+"update": 0,
+"values": [Color(1, 0.901961, 0, 1), Color(0.988235, 0, 0, 1), Color(1, 0.901961, 0, 1), Color(0.988235, 0, 0, 1), Color(1, 0.901961, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lgpuh"]
+_data = {
+&"RESET": SubResource("Animation_uxku7"),
+&"Without": SubResource("Animation_mfrsa")
+}
+
+[sub_resource type="Animation" id="Animation_ce0al"]
+resource_name = "In"
+length = 0.35
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Dark:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(0.5, 2),
+"update": 0,
+"values": [Vector2(1100, 800), Vector2(360, 800)]
+}
+
+[sub_resource type="Animation" id="Animation_bpysj"]
+resource_name = "Out"
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Dark:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(2, 0.5),
+"update": 0,
+"values": [Vector2(360, 800), Vector2(-380, 800)]
+}
+
+[sub_resource type="Animation" id="Animation_s3foj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Dark:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1100, 800)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sypyo"]
+_data = {
+&"In": SubResource("Animation_ce0al"),
+&"Out": SubResource("Animation_bpysj"),
+&"RESET": SubResource("Animation_s3foj")
+}
+
+[node name="Shop" type="Control" unique_id=843096168 node_paths=PackedStringArray("song")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sja7u")
+song = NodePath("Song")
+blocked = ExtResource("4_7x4fc")
+bought = ExtResource("5_s7c6w")
+click = ExtResource("6_bqbqh")
+
+[node name="Lose_menu" type="CanvasLayer" parent="." unique_id=1325392822]
+layer = 2
+
+[node name="Background" type="TextureRect" parent="Lose_menu" unique_id=926934129]
+modulate = Color(1, 1, 0, 1)
+offset_right = 18.0
+offset_bottom = 40.0
+scale = Vector2(40, 40)
+texture = ExtResource("5_6lkkh")
+
+[node name="Menu" type="TextureButton" parent="Lose_menu" unique_id=382991466]
+unique_name_in_owner = true
+z_index = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = 700.0
+offset_right = 16.0
+offset_bottom = 716.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(5, 5)
+pivot_offset = Vector2(8, 8.84615)
+action_mode = 0
+texture_normal = SubResource("CompressedTexture2D_xdk7y")
+texture_pressed = SubResource("CompressedTexture2D_73fhg")
+texture_hover = SubResource("CompressedTexture2D_21gni")
+
+[node name="ShopPlaceholder" type="Panel" parent="Lose_menu" unique_id=2071545094]
+modulate = Color(0.729412, 0.729412, 0.729412, 1)
+z_index = 1
+offset_top = 242.0
+offset_right = 71.99999
+offset_bottom = 258.7
+scale = Vector2(10, 10)
+theme = ExtResource("6_b5n7m")
+theme_override_styles/panel = SubResource("StyleBoxTexture_kw7gb")
+
+[node name="Coins" type="Label" parent="Lose_menu" unique_id=1037846420]
+unique_name_in_owner = true
+z_index = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 103.4
+offset_top = -1481.6
+offset_right = 2823.3723
+offset_bottom = -1067.6
+grow_vertical = 0
+scale = Vector2(0.2167669, 0.2167669)
+pivot_offset = Vector2(0, 201.957)
+text = "12"
+label_settings = SubResource("LabelSettings_wnm6w")
+vertical_alignment = 1
+
+[node name="Coins_visual" type="AnimatedSprite2D" parent="Lose_menu" unique_id=1602941269]
+z_index = 1
+position = Vector2(64.4, 324.40002)
+scale = Vector2(4.8, 4.8)
+sprite_frames = SubResource("SpriteFrames_i7apf")
+animation = &"Roll"
+autoplay = "Roll"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Lose_menu" unique_id=2063654889]
+unique_name_in_owner = true
+offset_left = -123.0
+offset_top = 409.0
+offset_right = 695.0
+offset_bottom = 1387.0
+vertical_scroll_mode = 2
+
+[node name="Shop_flow" type="Control" parent="Lose_menu/ScrollContainer" unique_id=1210390564]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Basics" type="Label" parent="Lose_menu/ScrollContainer/Shop_flow" unique_id=650618189]
+layout_mode = 0
+offset_left = 177.0
+offset_right = 1056.0
+offset_bottom = 255.0
+scale = Vector2(0.5, 0.5)
+theme_override_styles/normal = SubResource("StyleBoxTexture_y3e28")
+text = "Basics"
+label_settings = SubResource("LabelSettings_lh2g5")
+vertical_alignment = 1
+
+[node name="Printed" type="Label" parent="Lose_menu/ScrollContainer/Shop_flow" unique_id=1411148461]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 1059.0
+offset_bottom = 255.0
+scale = Vector2(0.5, 0.5)
+theme_override_styles/normal = SubResource("StyleBoxTexture_y3e28")
+text = "Printed"
+label_settings = SubResource("LabelSettings_lh2g5")
+vertical_alignment = 1
+
+[node name="Cross" type="Label" parent="Lose_menu/ScrollContainer/Shop_flow" unique_id=2120970834]
+layout_mode = 0
+offset_left = 180.0
+offset_top = 10.0
+offset_right = 1165.0
+offset_bottom = 265.0
+scale = Vector2(0.5, 0.5)
+theme_override_styles/normal = SubResource("StyleBoxTexture_y3e28")
+text = "Cross"
+label_settings = SubResource("LabelSettings_lh2g5")
+vertical_alignment = 1
+
+[node name="Scary" type="Label" parent="Lose_menu/ScrollContainer/Shop_flow" unique_id=261230054]
+layout_mode = 0
+offset_left = 180.0
+offset_top = 10.0
+offset_right = 1059.0
+offset_bottom = 265.0
+scale = Vector2(0.5, 0.5)
+theme_override_styles/normal = SubResource("StyleBoxTexture_y3e28")
+text = "Scary"
+label_settings = SubResource("LabelSettings_lh2g5")
+vertical_alignment = 1
+
+[node name="Winter" type="Label" parent="Lose_menu/ScrollContainer/Shop_flow" unique_id=839283534]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 1059.0
+offset_bottom = 255.0
+scale = Vector2(0.5, 0.5)
+theme_override_styles/normal = SubResource("StyleBoxTexture_y3e28")
+text = "Winter"
+label_settings = SubResource("LabelSettings_lh2g5")
+vertical_alignment = 1
+
+[node name="WthtCoins" type="Sprite2D" parent="Lose_menu/ScrollContainer/Shop_flow" unique_id=1282234040]
+modulate = Color(1, 1, 1, 0)
+z_index = 1
+position = Vector2(667, 487)
+scale = Vector2(12, 12)
+texture = ExtResource("18_ewl1g")
+
+[node name="SelectBorder" type="Sprite2D" parent="Lose_menu/ScrollContainer/Shop_flow" unique_id=1938964327]
+unique_name_in_owner = true
+z_index = 1
+position = Vector2(323, 147)
+scale = Vector2(14.4, 14.4)
+texture = ExtResource("11_lx7gl")
+
+[node name="Depth_control" type="Label" parent="Lose_menu/ScrollContainer" unique_id=927208577]
+unique_name_in_owner = true
+layout_mode = 2
+text = "a
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+
+[node name="CheckShop" parent="Lose_menu" unique_id=1218576613 instance=ExtResource("18_vabkk")]
+unique_name_in_owner = true
+offset_right = -720.0
+offset_bottom = -1600.0
+
+[node name="CanvasLayer" parent="Lose_menu/CheckShop" index="0"]
+layer = 2
+
+[node name="Chains" parent="Lose_menu/CheckShop/CanvasLayer" index="1"]
+self_modulate = Color(0.03529412, 0.7882353, 0.6862745, 1)
+
+[node name="Back" parent="Lose_menu/CheckShop/CanvasLayer" index="2"]
+self_modulate = Color(0.5764706, 0.3764706, 0.078431375, 1)
+
+[node name="ShopMan" type="Node2D" parent="Lose_menu" unique_id=1593238217]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Lose_menu/ShopMan" unique_id=740054213]
+layer = 3
+
+[node name="TopPanel" type="Panel" parent="Lose_menu/ShopMan/CanvasLayer" unique_id=1796464403]
+offset_right = 720.0
+offset_bottom = 242.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_6pn67")
+
+[node name="Shelf" type="Sprite2D" parent="Lose_menu/ShopMan/CanvasLayer" unique_id=1630653631]
+self_modulate = Color(0.5211406, 0.5211406, 0.5211405, 1)
+position = Vector2(636, 136)
+scale = Vector2(3.8520746, 3.8520746)
+texture = ExtResource("18_28ln3")
+
+[node name="SkinFace" type="AnimatedSprite2D" parent="Lose_menu/ShopMan/CanvasLayer" unique_id=1560996667]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_28ln3")
+position = Vector2(91, 119)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_b5n7m")
+animation = &"Sure"
+autoplay = "Idle"
+
+[node name="Dialog" type="RichTextLabel" parent="Lose_menu/ShopMan/CanvasLayer" unique_id=377672051]
+unique_name_in_owner = true
+z_index = 1
+offset_left = 168.0
+offset_top = 94.0
+offset_right = 557.0
+offset_bottom = 239.0
+theme = ExtResource("6_b5n7m")
+theme_override_colors/default_color = Color(0.94337994, 0.71864456, 0.26244184, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "Bienvenido, ¿qué buscas?"
+scroll_active = false
+autowrap_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_characters_behavior = 1
+visible_ratio = 0.0
+
+[node name="Respond" type="Button" parent="Lose_menu/ShopMan/CanvasLayer" unique_id=629459315]
+z_index = 3
+offset_right = 722.0
+offset_bottom = 403.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_lh2g5")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_xgvnb")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_28ln3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_tmow7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_d5v8k")
+flat = true
+
+[node name="ShopManDialogues" type="Node" parent="Lose_menu/ShopMan" unique_id=2054977116]
+unique_name_in_owner = true
+script = ExtResource("35_d5v8k")
+c_min = 38
+c_max = 41
+n_min = 42
+n_max = 56
+p_min = 57
+p_max = 62
+g_min = 63
+g_max = 67
+b_min = 68
+b_max = 72
+s_min = 73
+s_max = 77
+
+[node name="Check" type="Timer" parent="Lose_menu/ShopMan/ShopManDialogues" unique_id=588283672]
+one_shot = true
+
+[node name="Anims" type="AnimationPlayer" parent="Lose_menu/ShopMan" unique_id=1952718443]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_vabkk")
+next/Cry = &"Idle"
+next/Talk = &"Idle"
+
+[node name="Voice" type="AudioStreamPlayer" parent="Lose_menu/ShopMan" unique_id=18663408]
+unique_name_in_owner = true
+stream = ExtResource("37_vabkk")
+
+[node name="Cry" type="AudioStreamPlayer" parent="Lose_menu/ShopMan" unique_id=205589425]
+unique_name_in_owner = true
+stream = ExtResource("38_yq4nu")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1479366017]
+layer = 4
+
+[node name="Dark" type="Sprite2D" parent="CanvasLayer" unique_id=854874619]
+z_index = 3
+position = Vector2(1100, 800)
+scale = Vector2(40, 40)
+texture = ExtResource("16_pdan6")
+
+[node name="Timer" type="Timer" parent="." unique_id=426772047]
+wait_time = 0.001
+one_shot = true
+autostart = true
+
+[node name="Song" type="AudioStreamPlayer" parent="." unique_id=1738871704]
+stream = ExtResource("28_qju7s")
+volume_db = -10.0
+autoplay = true
+
+[node name="Without_coins" type="AnimationPlayer" parent="." unique_id=1865907248]
+libraries/ = SubResource("AnimationLibrary_lgpuh")
+
+[node name="Transition" type="AnimationPlayer" parent="." unique_id=2114795145]
+libraries/ = SubResource("AnimationLibrary_sypyo")
+autoplay = &"Out"
+
+[connection signal="button_down" from="Lose_menu/Menu" to="." method="_on_menu_button_down"]
+[connection signal="no" from="Lose_menu/CheckShop" to="Lose_menu/ShopMan/ShopManDialogues" method="realease"]
+[connection signal="yes" from="Lose_menu/CheckShop" to="." method="_really_buy"]
+[connection signal="pressed" from="Lose_menu/ShopMan/CanvasLayer/Respond" to="Lose_menu/ShopMan/ShopManDialogues" method="_on_respond_pressed"]
+[connection signal="timeout" from="Lose_menu/ShopMan/ShopManDialogues/Check" to="Lose_menu/ShopMan/ShopManDialogues" method="_on_check_timeout"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="animation_finished" from="Transition" to="." method="_on_transition_animation_finished"]
+
+[editable path="Lose_menu/CheckShop"]
