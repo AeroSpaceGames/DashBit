@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://deijtjj4ds33k"
+path="res://.godot/imported/DarkHorus Voice.mp3-05e1fef7ec1ddbe7afae97e1a9ea20c0.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/SFX/DarkHorus Voice.mp3"
+dest_files=["res://.godot/imported/DarkHorus Voice.mp3-05e1fef7ec1ddbe7afae97e1a9ea20c0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
