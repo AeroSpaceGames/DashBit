@@ -1,0 +1,47 @@
+[gd_resource type="VisualShader" format=3 uid="uid://c4rx6w8c4jx6o"]
+
+[sub_resource type="VisualShaderNodeVectorOp" id="VisualShaderNodeVectorOp_agv84"]
+
+[sub_resource type="VisualShaderNodeInput" id="VisualShaderNodeInput_411co"]
+expanded_output_ports = [0]
+input_name = "color"
+
+[sub_resource type="VisualShaderNodeVectorOp" id="VisualShaderNodeVectorOp_ltlmx"]
+operator = 2
+
+[sub_resource type="VisualShaderNodeColorParameter" id="VisualShaderNodeColorParameter_ijhl8"]
+parameter_name = "WhiteColor"
+
+[sub_resource type="VisualShaderNodeVectorOp" id="VisualShaderNodeVectorOp_ej8vv"]
+default_input_values = [0, Vector3(0, 0, 0), 1, Vector3(1, 1, 0)]
+operator = 2
+
+[sub_resource type="VisualShaderNodeStep" id="VisualShaderNodeStep_c6fol"]
+default_input_values = [0, 0.01, 1, 0.0]
+
+[sub_resource type="VisualShaderNodeFloatFunc" id="VisualShaderNodeFloatFunc_embpi"]
+function = 31
+
+[sub_resource type="VisualShaderNodeVectorOp" id="VisualShaderNodeVectorOp_cux5l"]
+operator = 2
+
+[resource]
+mode = 1
+flags/light_only = false
+nodes/fragment/2/node = SubResource("VisualShaderNodeInput_411co")
+nodes/fragment/2/position = Vector2(-1380, 160)
+nodes/fragment/4/node = SubResource("VisualShaderNodeVectorOp_ltlmx")
+nodes/fragment/4/position = Vector2(-260, 100)
+nodes/fragment/5/node = SubResource("VisualShaderNodeColorParameter_ijhl8")
+nodes/fragment/5/position = Vector2(-700, 460)
+nodes/fragment/6/node = SubResource("VisualShaderNodeVectorOp_ej8vv")
+nodes/fragment/6/position = Vector2(-1040, 40)
+nodes/fragment/7/node = SubResource("VisualShaderNodeStep_c6fol")
+nodes/fragment/7/position = Vector2(-820, 60)
+nodes/fragment/8/node = SubResource("VisualShaderNodeFloatFunc_embpi")
+nodes/fragment/8/position = Vector2(-580, 340)
+nodes/fragment/9/node = SubResource("VisualShaderNodeVectorOp_cux5l")
+nodes/fragment/9/position = Vector2(-240, 360)
+nodes/fragment/10/node = SubResource("VisualShaderNodeVectorOp_agv84")
+nodes/fragment/10/position = Vector2(60, 200)
+nodes/fragment/connections = PackedInt32Array(2, 0, 6, 0, 6, 0, 7, 1, 7, 0, 8, 0, 7, 0, 4, 0, 2, 0, 4, 1, 8, 0, 9, 0, 5, 0, 9, 1, 9, 0, 10, 1, 4, 0, 10, 0, 10, 0, 0, 0)
