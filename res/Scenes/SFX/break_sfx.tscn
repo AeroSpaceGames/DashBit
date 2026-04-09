@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://brod4f5f4bbtu"]
+
+[ext_resource type="AudioStream" uid="uid://b7kbvibom4c2w" path="res://Assets/Music/SFX/Break_block.mp3" id="1_12egy"]
+[ext_resource type="Script" uid="uid://c1jbqsqe8k6jw" path="res://Scripts/SFX/Optimizate_sfx.gd" id="1_q2n7x"]
+
+[node name="Break_sfx" type="Node2D"]
+script = ExtResource("1_q2n7x")
+
+[node name="Break" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_12egy")
+volume_db = -2.0
+autoplay = true
+
+[connection signal="finished" from="Break" to="." method="_on_break_finished"]

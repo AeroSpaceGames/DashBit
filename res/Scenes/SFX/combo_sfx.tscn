@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ke4la3to5vb5"]
+
+[ext_resource type="Script" uid="uid://c1jbqsqe8k6jw" path="res://Scripts/SFX/Optimizate_sfx.gd" id="1_byosm"]
+[ext_resource type="AudioStream" uid="uid://b8pdx8831wqh8" path="res://Assets/Music/SFX/Combo_sfx.mp3" id="2_xrwtp"]
+
+[node name="Combo_sfx" type="Node2D"]
+script = ExtResource("1_byosm")
+
+[node name="Combo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_xrwtp")
+volume_db = -8.0
+autoplay = true
+
+[connection signal="finished" from="Combo" to="." method="_on_combo_finished"]
+[connection signal="finished" from="Combo" to="." method="_on_break_finished"]
