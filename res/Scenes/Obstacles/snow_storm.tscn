@@ -1,0 +1,286 @@
+[gd_scene format=3 uid="uid://c7dctvy55074d"]
+
+[ext_resource type="Script" uid="uid://bsptf885cxlnt" path="res://Scripts/Obstacle/snow_storm.gd" id="1_3klu1"]
+[ext_resource type="Texture2D" uid="uid://dshsdqu2xflm7" path="res://Assets/PNG/Effects/White_screen.png" id="1_gddnx"]
+[ext_resource type="Texture2D" uid="uid://dmeskom1lv047" path="res://Assets/PNG/Effects/SnowFlake.png" id="2_a1the"]
+[ext_resource type="Texture2D" uid="uid://cf2jc7fucu6xx" path="res://Assets/PNG/Effects/Gradient.png" id="3_iwlh2"]
+
+[sub_resource type="Curve" id="Curve_3klu1"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.8492062, 0.7415731), -1.557302, -1.557302, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_venqn"]
+curve = SubResource("Curve_3klu1")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_iwlh2"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(300, 1, 1)
+angular_velocity_min = -360.0
+angular_velocity_max = 359.99997
+gravity = Vector3(0, 3000, 0)
+linear_accel_min = 3000.0
+linear_accel_max = 3000.0
+tangential_accel_min = 99.99999
+tangential_accel_max = 99.99999
+scale_min = 8.0
+scale_max = 8.0
+alpha_curve = SubResource("CurveTexture_venqn")
+
+[sub_resource type="Animation" id="Animation_5cmv3"]
+resource_name = "Hide"
+length = 0.5
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Background:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.5), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/SnowFlakes:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.5), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/SnowFlakes:emitting")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/Gradient:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.25),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"remove_vel"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_3klu1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/SnowFlakes:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Background:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Gradient:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/SnowFlakes:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.5)]
+}
+
+[sub_resource type="Animation" id="Animation_iwlh2"]
+resource_name = "Show"
+length = 0.7
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/SnowFlakes:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Background:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.12),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Gradient:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.5), Color(1, 1, 1, 0.1), Color(1, 1, 1, 0.3)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/SnowFlakes:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.5)]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"add_vel"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_venqn"]
+resource_name = "Still"
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Gradient:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.20000002, 0.4, 0.59999996, 0.79999995),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.3), Color(1, 1, 1, 0.1), Color(1, 1, 1, 0.3), Color(1, 1, 1, 0.1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3klu1"]
+_data = {
+&"Hide": SubResource("Animation_5cmv3"),
+&"RESET": SubResource("Animation_3klu1"),
+&"Show": SubResource("Animation_iwlh2"),
+&"Still": SubResource("Animation_venqn")
+}
+
+[node name="SnowStorm" type="Node2D" unique_id=831236761]
+script = ExtResource("1_3klu1")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1131242658]
+layer = 2
+
+[node name="Background" type="TextureRect" parent="CanvasLayer" unique_id=1684946477]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(0.8579229, 1.2688957, 1.2700006, 0.8)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_gddnx")
+
+[node name="Gradient" type="TextureRect" parent="CanvasLayer" unique_id=339533375]
+modulate = Color(0.63743347, 1, 1, 1)
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 880.1891
+offset_bottom = -880.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 1.5707964
+scale = Vector2(1, -1)
+texture = ExtResource("3_iwlh2")
+
+[node name="SnowFlakes" type="GPUParticles2D" parent="CanvasLayer" unique_id=231447850]
+self_modulate = Color(1, 1, 1, 0.5)
+position = Vector2(360, -20)
+emitting = false
+texture = ExtResource("2_a1the")
+lifetime = 0.7
+process_material = SubResource("ParticleProcessMaterial_iwlh2")
+
+[node name="Anim" type="AnimationPlayer" parent="." unique_id=1647824739]
+libraries/ = SubResource("AnimationLibrary_3klu1")
+next/Show = &"Still"
+blend_times = [&"Show", &"Still", 0.1]
+
+[node name="Timer" type="Timer" parent="." unique_id=581812754]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

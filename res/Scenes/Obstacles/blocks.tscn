@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://0uju7pdrmo4v"]
+
+[ext_resource type="Script" uid="uid://c053sbgm3yq6d" path="res://Scripts/Obstacle/blocks_spawner.gd" id="1_koqq7"]
+[ext_resource type="Curve" uid="uid://bhjpq7d0fei53" path="res://Curves/Begginer_vel.tres" id="2_4qamv"]
+[ext_resource type="Curve" uid="uid://8trf52q1vaxj" path="res://Curves/Pro_vel.tres" id="3_5pyif"]
+
+[sub_resource type="Curve" id="Curve_6bnv2"]
+_limits = [0.0, 1.65, 0.0, 2.5]
+_data = [Vector2(0, 0.9), 0.0, 0.0, 0, 0, Vector2(1, 1.2), 0.0, 0.0, 0, 0, Vector2(2.5, 1.45), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Curve" id="Curve_82vvk"]
+_limits = [0.0, 2.0, 0.0, 2.5]
+_data = [Vector2(0, 1.1), 0.0, 0.0, 0, 0, Vector2(0.5, 1.5), 0.0, 0.0, 0, 0, Vector2(2.5, 1.7), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Curve" id="Curve_lj45j"]
+_limits = [0.0, 2.0, 0.0, 3.0]
+_data = [Vector2(0, 1.2), 0.0, -0.3833333, 0, 0, Vector2(2, 1.85), -0.080869496, -0.080869496, 0, 0, Vector2(3, 2), 0.8000004, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Curve" id="Curve_5pyif"]
+_limits = [0.0, 2.0, 0.0, 2.5]
+_data = [Vector2(0, 0.7), 0.0, 0.0, 0, 0, Vector2(1, 1.2), 0.0, 0.0, 0, 0, Vector2(1.5, 1.6), 0.0, 0.0, 0, 0, Vector2(2.5, 2), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[node name="Blocks" type="Node2D" unique_id=1762049991 groups=["PlayableObject"]]
+script = ExtResource("1_koqq7")
+begginer_vel = ExtResource("2_4qamv")
+easy_pro_vel = SubResource("Curve_6bnv2")
+pro_vel = ExtResource("3_5pyif")
+pro_hard_vel = SubResource("Curve_82vvk")
+dashcore_vel = SubResource("Curve_lj45j")
+measurement_vel = SubResource("Curve_5pyif")
+
+[node name="Pos_1" type="Marker2D" parent="." unique_id=2057768089]
+position = Vector2(180, -100)
+
+[node name="Pos_2" type="Marker2D" parent="." unique_id=1458958427]
+position = Vector2(540, -100)
+
+[node name="Spawn" type="Timer" parent="." unique_id=861982199]
+
+[node name="Faster" type="Timer" parent="." unique_id=1348844666]
+wait_time = 5.0
+autostart = true
+
+[node name="Speed" type="Timer" parent="." unique_id=130221914]
+wait_time = 5.0
+autostart = true
+
+[connection signal="timeout" from="Spawn" to="." method="_on_spawn_timeout"]
+[connection signal="timeout" from="Faster" to="." method="_on_faster_timeout"]
+[connection signal="timeout" from="Speed" to="." method="_on_speed_timeout"]
