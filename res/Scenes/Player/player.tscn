@@ -1,0 +1,1238 @@
+[gd_scene load_steps=81 format=3 uid="uid://sv7emicuxac2"]
+
+[ext_resource type="Script" uid="uid://rnllj01ir0p6" path="res://Scripts/Player/player.gd" id="1_1ps6v"]
+[ext_resource type="Shader" uid="uid://c4rx6w8c4jx6o" path="res://Shaders/white_coloring.tres" id="2_2aanf"]
+[ext_resource type="Texture2D" uid="uid://8r7s25dj5kuy" path="res://Assets/PNG/Player/Black.png" id="2_4qh5u"]
+[ext_resource type="Texture2D" uid="uid://d16kqjqpgpc5x" path="res://Assets/PNG/Player/Alien_P.png" id="2_enij7"]
+[ext_resource type="Texture2D" uid="uid://b8hw4r6f3bjc1" path="res://Assets/PNG/Player/Bl_8.png" id="2_pvc8g"]
+[ext_resource type="Texture2D" uid="uid://bch2s8scpqqjl" path="res://Assets/PNG/Player/White.png" id="3_v1a3h"]
+[ext_resource type="Texture2D" uid="uid://c8etdh8ksqich" path="res://Assets/PNG/Player/Kanyi_B.png" id="5_2jnj1"]
+[ext_resource type="Texture2D" uid="uid://b7v5xys47hqof" path="res://Assets/PNG/Player/White_bat.png" id="6_ogmfp"]
+[ext_resource type="Texture2D" uid="uid://2hpohtxqecf6" path="res://Assets/PNG/Player/White_creeper.png" id="6_rukb4"]
+[ext_resource type="Texture2D" uid="uid://bpjqyj7rwcmu6" path="res://Assets/PNG/Player/White_jack.png" id="6_ur3l4"]
+[ext_resource type="Texture2D" uid="uid://b3uebfl2wscwg" path="res://Assets/PNG/Player/Green_Happy.png" id="7_btbam"]
+[ext_resource type="Texture2D" uid="uid://djnleptmsyjgr" path="res://Assets/PNG/Player/L_R.png" id="7_enij7"]
+[ext_resource type="Texture2D" uid="uid://u8c4bimwenrx" path="res://Assets/PNG/Player/-_magnet.png" id="7_mhhby"]
+[ext_resource type="Texture2D" uid="uid://br6wohr1f60j2" path="res://Assets/PNG/Player/White_eye.png" id="8_h5u0x"]
+[ext_resource type="Texture2D" uid="uid://co4a17jfmm6el" path="res://Assets/PNG/Player/White_spider.png" id="9_po18e"]
+[ext_resource type="Shader" uid="uid://bkdm53txdi7hp" path="res://Shaders/Inverted.gdshader" id="10_a40h5"]
+[ext_resource type="Texture2D" uid="uid://bs5laicp3yg7r" path="res://Assets/PNG/Player/B_heart.png" id="10_mwii3"]
+[ext_resource type="Texture2D" uid="uid://d2qcqtlh4eg0l" path="res://Assets/PNG/Player/W_G.png" id="10_rblve"]
+[ext_resource type="Texture2D" uid="uid://b0plj5vwvu46a" path="res://Assets/PNG/Player/White_sparks.png" id="11_bmb2s"]
+[ext_resource type="Texture2D" uid="uid://b3k0jdkd6uvms" path="res://Assets/PNG/Player/W_Hat.png" id="11_fn4qh"]
+[ext_resource type="Texture2D" uid="uid://5lr687uc46yq" path="res://Assets/PNG/Player/Br_8.png" id="12_e2uma"]
+[ext_resource type="Texture2D" uid="uid://csa805niikil3" path="res://Assets/PNG/Player/W_YinYan.png" id="12_nrxve"]
+[ext_resource type="Texture2D" uid="uid://bckcl0rw1l5m2" path="res://Assets/PNG/Player/White_pumpkin.png" id="14_ixrbb"]
+[ext_resource type="Texture2D" uid="uid://saij08myf11f" path="res://Assets/PNG/Player/White_skull.png" id="15_ei2r2"]
+[ext_resource type="Texture2D" uid="uid://cwm78h2mp5tta" path="res://Assets/PNG/UI/Tap_input.png" id="15_hw0m1"]
+[ext_resource type="Texture2D" uid="uid://dxqpcv4e8kma2" path="res://Assets/PNG/Player/Pink_Happy.png" id="16_cyc7h"]
+[ext_resource type="Texture2D" uid="uid://iejaoysrclj3" path="res://Assets/PNG/Player/White_web.png" id="16_j6uq4"]
+[ext_resource type="Texture2D" uid="uid://bl2ebwcyx3a58" path="res://Assets/PNG/Player/WPattern1.png" id="17_5omc3"]
+[ext_resource type="Texture2D" uid="uid://canwjrjksepds" path="res://Assets/PNG/Player/Black_sparks.png" id="17_ur3l4"]
+[ext_resource type="Texture2D" uid="uid://c16lp1m2kapia" path="res://Assets/PNG/Player/Black_jack.png" id="18_2ahak"]
+[ext_resource type="Texture2D" uid="uid://cai1f0wdca2ai" path="res://Assets/PNG/Player/Alien_G.png" id="18_mwii3"]
+[ext_resource type="Texture2D" uid="uid://evfm7sm5ma0k" path="res://Assets/PNG/Player/WPattern2.png" id="18_pcwjh"]
+[ext_resource type="Texture2D" uid="uid://blvlo483882gu" path="res://Assets/PNG/Player/Black_creeper.png" id="19_4no11"]
+[ext_resource type="Texture2D" uid="uid://dilllcqa6a684" path="res://Assets/PNG/Player/W_SMan.png" id="19_5omc3"]
+[ext_resource type="Texture2D" uid="uid://lg8k1n8lp8jl" path="res://Assets/PNG/Player/+_magnet.png" id="19_ft7bp"]
+[ext_resource type="Shader" uid="uid://muj0yofhovej" path="res://Shaders/black_coloring.tres" id="19_ogmfp"]
+[ext_resource type="Texture2D" uid="uid://dh57o4ragcr4" path="res://Assets/PNG/Player/Kanyi_O.png" id="20_2aanf"]
+[ext_resource type="Texture2D" uid="uid://d3fj3pcx61qkk" path="res://Assets/PNG/UI/GoodWave.png" id="20_su2op"]
+[ext_resource type="Texture2D" uid="uid://d1y5y6hav4gdc" path="res://Assets/PNG/Player/W_Snow.png" id="21_pcwjh"]
+[ext_resource type="Texture2D" uid="uid://dylf7ywpv3wyv" path="res://Assets/PNG/Player/G_R.png" id="22_m6ahd"]
+[ext_resource type="Texture2D" uid="uid://dnvcb86pu461h" path="res://Assets/PNG/Player/B_YinYan.png" id="23_03r4t"]
+[ext_resource type="Texture2D" uid="uid://bp2n3wqu31yfw" path="res://Assets/PNG/Player/Black_bat.png" id="23_h5u0x"]
+[ext_resource type="Texture2D" uid="uid://deks5yf67vsp4" path="res://Assets/PNG/Player/O_heart.png" id="25_ogmfp"]
+[ext_resource type="Texture2D" uid="uid://ce84rf0irna5i" path="res://Assets/PNG/Player/Black_eye.png" id="27_v37cr"]
+[ext_resource type="Texture2D" uid="uid://c7yc31r2ps0pi" path="res://Assets/PNG/Player/Black_spider.png" id="28_8d028"]
+[ext_resource type="Texture2D" uid="uid://ewklpyvcswpb" path="res://Assets/PNG/Player/Black_pumpkin.png" id="31_po18e"]
+[ext_resource type="Texture2D" uid="uid://vxvt0vs7ew8i" path="res://Assets/PNG/Player/Black_skull.png" id="32_v37cr"]
+[ext_resource type="Texture2D" uid="uid://msslaj6nnubj" path="res://Assets/PNG/Player/Black_web.png" id="33_8d028"]
+[ext_resource type="Texture2D" uid="uid://1f380aanvadk" path="res://Assets/PNG/Player/B_G.png" id="33_ejxfg"]
+[ext_resource type="Texture2D" uid="uid://cqmlei2c1xm5o" path="res://Assets/PNG/Player/B_Hat.png" id="34_huyyu"]
+[ext_resource type="Script" uid="uid://bdj8wsd0ekx17" path="res://Scripts/Player/player_coloring.gd" id="35_m6ahd"]
+[ext_resource type="Texture2D" uid="uid://d1vrgrkgw7wan" path="res://Assets/PNG/Player/BPattern1.png" id="42_ejxfg"]
+[ext_resource type="Texture2D" uid="uid://b5mnsk7i1eolw" path="res://Assets/PNG/Player/B_SMan.png" id="42_m5eiq"]
+[ext_resource type="Texture2D" uid="uid://chve40q2l5qs5" path="res://Assets/PNG/Player/BPattern2.png" id="43_huyyu"]
+[ext_resource type="Texture2D" uid="uid://x34fsq2jo8gj" path="res://Assets/PNG/Player/B_Snow.png" id="44_8g0gh"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m6ahd"]
+shader = ExtResource("2_2aanf")
+shader_parameter/WhiteColor = Color(0.812, 1, 0.995, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kun4u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_mwii3")
+}],
+"loop": true,
+"name": &"Alien",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_pvc8g")
+}],
+"loop": true,
+"name": &"BB_8",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_v1a3h")
+}],
+"loop": true,
+"name": &"BO",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_v1a3h")
+}],
+"loop": true,
+"name": &"BW",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_ogmfp")
+}],
+"loop": true,
+"name": &"Bat",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_v1a3h")
+}],
+"loop": true,
+"name": &"CR",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_rukb4")
+}],
+"loop": true,
+"name": &"Creeper",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_h5u0x")
+}],
+"loop": true,
+"name": &"Eye",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_po18e")
+}],
+"loop": true,
+"name": &"Ghost",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_rblve")
+}],
+"loop": true,
+"name": &"Gift",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_fn4qh")
+}],
+"loop": true,
+"name": &"Hat",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_ur3l4")
+}],
+"loop": true,
+"name": &"Jack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_2jnj1")
+}],
+"loop": true,
+"name": &"Kanji",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_v1a3h")
+}],
+"loop": true,
+"name": &"LG",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_enij7")
+}],
+"loop": true,
+"name": &"LG_R",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_v1a3h")
+}],
+"loop": true,
+"name": &"MA",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_mhhby")
+}],
+"loop": true,
+"name": &"Magnet",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_mwii3")
+}],
+"loop": true,
+"name": &"OB_H",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_5omc3")
+}],
+"loop": true,
+"name": &"P1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_pcwjh")
+}],
+"loop": true,
+"name": &"P2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_v1a3h")
+}],
+"loop": true,
+"name": &"PC",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_btbam")
+}],
+"loop": true,
+"name": &"PG_H",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_ixrbb")
+}],
+"loop": true,
+"name": &"Pumpkin",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_5omc3")
+}],
+"loop": true,
+"name": &"SMan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_v1a3h")
+}],
+"loop": true,
+"name": &"ST",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_ei2r2")
+}],
+"loop": true,
+"name": &"Skull",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_pcwjh")
+}],
+"loop": true,
+"name": &"Snow",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_j6uq4")
+}],
+"loop": true,
+"name": &"Web",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_bmb2s")
+}],
+"loop": true,
+"name": &"X_GB",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_bmb2s")
+}],
+"loop": true,
+"name": &"X_M",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_bmb2s")
+}],
+"loop": true,
+"name": &"X_O",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_bmb2s")
+}],
+"loop": true,
+"name": &"X_RB",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_bmb2s")
+}],
+"loop": true,
+"name": &"X_RY",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_bmb2s")
+}],
+"loop": true,
+"name": &"X_YP",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_v1a3h")
+}],
+"loop": true,
+"name": &"YB",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_nrxve")
+}],
+"loop": true,
+"name": &"YingYang",
+"speed": 5.0
+}]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ixrbb"]
+shader = ExtResource("19_ogmfp")
+shader_parameter/BlackColor = Color(0.521569, 0, 0.415686, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uwit5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_enij7")
+}],
+"loop": true,
+"name": &"Alien",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_e2uma")
+}],
+"loop": true,
+"name": &"BB_8",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4qh5u")
+}],
+"loop": true,
+"name": &"BO",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4qh5u")
+}],
+"loop": true,
+"name": &"BW",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_h5u0x")
+}],
+"loop": true,
+"name": &"Bat",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4qh5u")
+}],
+"loop": true,
+"name": &"CR",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_4no11")
+}],
+"loop": true,
+"name": &"Creeper",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_v37cr")
+}],
+"loop": true,
+"name": &"Eye",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_8d028")
+}],
+"loop": true,
+"name": &"Ghost",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_ejxfg")
+}],
+"loop": true,
+"name": &"Gift",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_huyyu")
+}],
+"loop": true,
+"name": &"Hat",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_2ahak")
+}],
+"loop": true,
+"name": &"Jack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_2aanf")
+}],
+"loop": true,
+"name": &"Kanji",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4qh5u")
+}],
+"loop": true,
+"name": &"LG",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_m6ahd")
+}],
+"loop": true,
+"name": &"LG_R",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4qh5u")
+}],
+"loop": true,
+"name": &"MA",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_ft7bp")
+}],
+"loop": true,
+"name": &"Magnet",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_ogmfp")
+}],
+"loop": true,
+"name": &"OB_H",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("42_ejxfg")
+}],
+"loop": true,
+"name": &"P1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("43_huyyu")
+}],
+"loop": true,
+"name": &"P2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4qh5u")
+}],
+"loop": true,
+"name": &"PC",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_cyc7h")
+}],
+"loop": true,
+"name": &"PG_H",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31_po18e")
+}],
+"loop": true,
+"name": &"Pumpkin",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("42_m5eiq")
+}],
+"loop": true,
+"name": &"SMan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4qh5u")
+}],
+"loop": true,
+"name": &"ST",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("32_v37cr")
+}],
+"loop": true,
+"name": &"Skull",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("44_8g0gh")
+}],
+"loop": true,
+"name": &"Snow",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_8d028")
+}],
+"loop": true,
+"name": &"Web",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_ur3l4")
+}],
+"loop": true,
+"name": &"X_GB",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_ur3l4")
+}],
+"loop": true,
+"name": &"X_M",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_ur3l4")
+}],
+"loop": true,
+"name": &"X_O",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_ur3l4")
+}],
+"loop": true,
+"name": &"X_RB",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_ur3l4")
+}],
+"loop": true,
+"name": &"X_RY",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_ur3l4")
+}],
+"loop": true,
+"name": &"X_YP",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4qh5u")
+}],
+"loop": true,
+"name": &"YB",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_03r4t")
+}],
+"loop": true,
+"name": &"YingYang",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qvrii"]
+size = Vector2(128, 22)
+
+[sub_resource type="Animation" id="Animation_w7sdv"]
+resource_name = "Boing"
+length = 0.2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../White_sprite:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.15, 0.2),
+"transitions": PackedFloat32Array(1, 2, 1, 1),
+"update": 0,
+"values": [Vector2(8, 6), Vector2(8, 5), Vector2(8, 6), Vector2(8, 8)]
+}
+
+[sub_resource type="Animation" id="Animation_nr7xy"]
+resource_name = "Feedback"
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GoodWave:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("GoodWave:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(8, 8), Vector2(15, 15)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("GoodWave:modulate")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_j0x1o"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../White_sprite:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(8, 8)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("GoodWave:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_em6ha"]
+_data = {
+&"Boing": SubResource("Animation_w7sdv"),
+&"Feedback": SubResource("Animation_nr7xy"),
+&"RESET": SubResource("Animation_j0x1o")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_20gcd"]
+size = Vector2(128, 22)
+
+[sub_resource type="Animation" id="Animation_i43mq"]
+resource_name = "Boing"
+length = 0.2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Black_sprite:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.15, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(8, 6), Vector2(8, 5), Vector2(8, 6), Vector2(8, 8)]
+}
+
+[sub_resource type="Animation" id="Animation_pu01u"]
+resource_name = "Feedback"
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GoodWave:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("GoodWave:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("GoodWave:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(8, 8), Vector2(15, 15)]
+}
+
+[sub_resource type="Animation" id="Animation_l7bmj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Black_sprite:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(8, 6)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("GoodWave:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_n7eau"]
+_data = {
+&"Boing": SubResource("Animation_i43mq"),
+&"Feedback": SubResource("Animation_pu01u"),
+&"RESET": SubResource("Animation_l7bmj")
+}
+
+[sub_resource type="Animation" id="Animation_mrtg2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Black_sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(540, 1320)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("White_sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(180, 1320)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Black_sprite:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(8, 8)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("White_sprite:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(8, 8)]
+}
+
+[sub_resource type="Animation" id="Animation_h633a"]
+resource_name = "side_1"
+length = 0.2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Black_sprite:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.15, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(180, 1320), Vector2(300, 1320), Vector2(561, 1320), Vector2(540, 1320)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("White_sprite:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.15, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(540, 1320), Vector2(420, 1320), Vector2(142, 1320), Vector2(180, 1320)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Black_sprite:scale")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.15, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(8, 8), Vector2(8, 5.7), Vector2(5, 9), Vector2(8, 8)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("White_sprite:scale")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.15, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(8, 8), Vector2(8, 5.7), Vector2(5, 9), Vector2(8, 8)]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.15),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"_generate_dust"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_ifntk"]
+resource_name = "side_2"
+length = 0.2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Black_sprite:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.15, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(540, 1320), Vector2(300, 1320), Vector2(142, 1320), Vector2(180, 1320)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("White_sprite:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.15, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(180, 1320), Vector2(420, 1320), Vector2(572, 1320), Vector2(540, 1320)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Black_sprite:scale")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.15, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(8, 8), Vector2(8, 5.7), Vector2(5, 9), Vector2(8, 8)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("White_sprite:scale")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.15, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(8, 8), Vector2(8, 5.7), Vector2(5, 9), Vector2(8, 8)]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.15),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"_generate_dust"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ra6wp"]
+_data = {
+&"RESET": SubResource("Animation_mrtg2"),
+&"side_1": SubResource("Animation_h633a"),
+&"side_2": SubResource("Animation_ifntk")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o6g2w"]
+size = Vector2(720, 1600)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_upeh8"]
+size = Vector2(718, 32)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3uu4f"]
+shader = ExtResource("10_a40h5")
+
+[sub_resource type="Animation" id="Animation_w48yy"]
+resource_name = "Bump"
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TapInput:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.19999999, 0.45, 0.65, 0.9),
+"transitions": PackedFloat32Array(1, 2, 0.5, 2, 0.1),
+"update": 0,
+"values": [Vector2(0.7, 0.7), Vector2(0.8, 0.8), Vector2(0.7, 0.7), Vector2(0.8, 0.8), Vector2(0.7, 0.7)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TapInput:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.784314)]
+}
+
+[sub_resource type="Animation" id="Animation_bc4lo"]
+resource_name = "Fade"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TapInput:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.784314), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_fnos5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TapInput:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.7, 0.7)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TapInput:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.784314)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gbkn8"]
+_data = {
+&"Bump": SubResource("Animation_w48yy"),
+&"Fade": SubResource("Animation_bc4lo"),
+&"RESET": SubResource("Animation_fnos5")
+}
+
+[node name="Player" type="Node2D" groups=["PlayableObject"]]
+z_index = 1
+script = ExtResource("1_1ps6v")
+
+[node name="White_sprite" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_m6ahd")
+position = Vector2(180, 1320)
+scale = Vector2(8, 8)
+sprite_frames = SubResource("SpriteFrames_kun4u")
+animation = &"P2"
+
+[node name="Black_sprite" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_ixrbb")
+position = Vector2(540, 1320)
+scale = Vector2(8, 8)
+sprite_frames = SubResource("SpriteFrames_uwit5")
+animation = &"P1"
+
+[node name="PlayerColoring" type="Node" parent="."]
+script = ExtResource("35_m6ahd")
+
+[node name="Dust1_pos" type="Marker2D" parent="."]
+position = Vector2(114, 1320)
+rotation = 3.1415927
+scale = Vector2(1, -1)
+
+[node name="Dust2_pos" type="Marker2D" parent="."]
+position = Vector2(604, 1320)
+scale = Vector2(-1, 1)
+
+[node name="Pos_1" type="Marker2D" parent="."]
+position = Vector2(180, 1320)
+
+[node name="Pos_2" type="Marker2D" parent="."]
+position = Vector2(540, 1320)
+
+[node name="White" type="Area2D" parent="." groups=["White"]]
+position = Vector2(180, 1320)
+collision_mask = 10
+
+[node name="Collision" type="CollisionShape2D" parent="White"]
+position = Vector2(0, -45)
+shape = SubResource("RectangleShape2D_qvrii")
+debug_color = Color(0.976471, 0, 0.407843, 0.419608)
+
+[node name="Bounce" type="AnimationPlayer" parent="White"]
+libraries = {
+&"": SubResource("AnimationLibrary_em6ha")
+}
+
+[node name="GoodWave" type="Sprite2D" parent="White"]
+visible = false
+scale = Vector2(8, 8)
+texture = ExtResource("20_su2op")
+
+[node name="Black" type="Area2D" parent="." groups=["Black"]]
+position = Vector2(540, 1320)
+collision_mask = 10
+
+[node name="Collision" type="CollisionShape2D" parent="Black"]
+position = Vector2(0, -45)
+shape = SubResource("RectangleShape2D_20gcd")
+
+[node name="Bounce" type="AnimationPlayer" parent="Black"]
+libraries = {
+&"": SubResource("AnimationLibrary_n7eau")
+}
+
+[node name="GoodWave" type="Sprite2D" parent="Black"]
+visible = false
+scale = Vector2(8, 8)
+texture = ExtResource("20_su2op")
+
+[node name="Animations" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_ra6wp")
+}
+
+[node name="Movile_button" type="TouchScreenButton" parent="."]
+position = Vector2(360, 800)
+shape = SubResource("RectangleShape2D_o6g2w")
+shape_centered = false
+action = "flip"
+
+[node name="Miss_Area" type="Area2D" parent="." groups=["Miss"]]
+position = Vector2(360, 1310)
+collision_mask = 2
+
+[node name="Collision" type="CollisionShape2D" parent="Miss_Area"]
+shape = SubResource("RectangleShape2D_upeh8")
+debug_color = Color(0, 0.647059, 0.219608, 0.419608)
+
+[node name="Rect" type="ColorRect" parent="."]
+visible = false
+material = SubResource("ShaderMaterial_3uu4f")
+offset_top = 610.0
+offset_right = 720.0
+offset_bottom = 1310.0
+
+[node name="TapInput" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.784314)
+z_index = 1
+position = Vector2(360, 1030)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("15_hw0m1")
+
+[node name="Tap" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_gbkn8")
+}
+autoplay = "Bump"
+
+[node name="ColorRect" type="ColorPicker" parent="."]
+visible = false
+offset_right = 298.0
+offset_bottom = 572.0
+color = Color(0.101961, 1, 0.8, 1)
+
+[connection signal="animation_finished" from="Animations" to="." method="_on_animations_animation_finished"]
+[connection signal="pressed" from="Movile_button" to="." method="_on_movile_button_pressed"]
