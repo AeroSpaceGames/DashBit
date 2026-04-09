@@ -1,0 +1,98 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="Dash Bit"
+config/version="2.9"
+run/main_scene="uid://f1xcyslueko0"
+config/features=PackedStringArray("4.6", "Mobile")
+boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
+boot_splash/image="res://Aerospace.png"
+config/icon="uid://blhihrm6t3u3i"
+
+[autoload]
+
+CameraShake="*res://Scripts/GLOBAL/camera_shake.gd"
+StatsManager="*res://Scripts/GLOBAL/stats_manager.gd"
+Difficulty="*res://Scripts/GLOBAL/difficulty.gd"
+ComboManager="*res://Scripts/GLOBAL/combo_manager.gd"
+FlowControl="*res://Scripts/GLOBAL/flow_control.gd"
+SkinControl="*res://Scripts/GLOBAL/skin_control.gd"
+SongsControl="*res://Scripts/GLOBAL/songs_control.gd"
+BoxesManager="*res://Scripts/GLOBAL/boxes_manager.gd"
+DialogueManager="*res://Scripts/GLOBAL/dialogue_manager.gd"
+Dialogues="*res://Scripts/GLOBAL/Dialogues.gd"
+ModsManager="*uid://bw8oof8bj7wko"
+
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=1600
+window/size/mode=2
+window/size/initial_position_type=0
+window/stretch/mode="viewport"
+window/handheld/orientation=1
+
+[file_customization]
+
+folder_colors={
+"res://Assets/": "red",
+"res://Curves/": "orange",
+"res://Particles/": "pink",
+"res://Prefabs/": "purple",
+"res://Resources/": "blue",
+"res://Scenes/": "yellow",
+"res://Scripts/": "green",
+"res://UI/": "teal"
+}
+
+[global_group]
+
+groups=""
+PlayableObject=""
+ModInterface=""
+
+[input]
+
+flip={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":32,"key_label":0,"unicode":32,"location":0,"echo":false,"script":null)
+, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":1,"position":Vector2(124, 22),"global_position":Vector2(133, 68),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
+]
+}
+play={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":true,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":83,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+]
+}
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://Assets/Dialogues/Translations.EN.translation", "res://Assets/Dialogues/Translations.ES.translation")
+
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Blocks"
+2d_physics/layer_3="Miss"
+2d_physics/layer_4="Thunders"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
