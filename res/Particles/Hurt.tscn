@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://c64h6xdjhcn84"]
+
+[ext_resource type="Texture2D" uid="uid://b1j15pwa03igd" path="res://Assets/PNG/Effects/Bottom_particle.png" id="1_5fd3n"]
+
+[sub_resource type="Gradient" id="Gradient_4cy46"]
+offsets = PackedFloat32Array(0.47541, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_78ldr"]
+gradient = SubResource("Gradient_4cy46")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_wrnuc"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(260, 1, 1)
+angle_min = -720.0
+angle_max = 720.0
+direction = Vector3(0, -100, 0)
+spread = 0.0
+initial_velocity_min = 1000.0
+initial_velocity_max = 1000.0
+angular_velocity_min = 720.0
+angular_velocity_max = 720.0
+gravity = Vector3(0, -980, 0)
+linear_accel_min = 100.0
+linear_accel_max = 100.0
+scale_min = 8.0
+scale_max = 8.0
+color_ramp = SubResource("GradientTexture1D_78ldr")
+
+[node name="Hurt" type="GPUParticles2D"]
+modulate = Color(0.988235, 0.172549, 0.592157, 1)
+position = Vector2(360, 1600)
+emitting = false
+process_material = SubResource("ParticleProcessMaterial_wrnuc")
+texture = ExtResource("1_5fd3n")
+lifetime = 0.5
+one_shot = true

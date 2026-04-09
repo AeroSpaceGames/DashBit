@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://du0raurdy3v2j"]
+
+[ext_resource type="Texture2D" uid="uid://dhvmn21ssuhty" path="res://Assets/PNG/Effects/Star.png" id="1_drera"]
+
+[sub_resource type="Gradient" id="Gradient_lu8ra"]
+colors = PackedColorArray(0.423529, 1, 1, 1, 1, 1, 1, 0)
+
+[node name="Streak_particles" type="CPUParticles2D"]
+z_index = 2
+emitting = false
+texture = ExtResource("1_drera")
+lifetime = 0.2
+one_shot = true
+explosiveness = 1.0
+emission_shape = 3
+emission_rect_extents = Vector2(16, 16)
+direction = Vector2(0, -10)
+spread = 90.0
+gravity = Vector2(0, 2980)
+initial_velocity_min = 1000.0
+initial_velocity_max = 1000.0
+angular_velocity_min = -720.0
+angular_velocity_max = 720.0
+linear_accel_min = 100.0
+linear_accel_max = 100.0
+tangential_accel_min = 100.0
+tangential_accel_max = 100.0
+scale_amount_min = 3.0
+scale_amount_max = 4.0
+color = Color(0.423529, 1, 1, 1)
+color_ramp = SubResource("Gradient_lu8ra")

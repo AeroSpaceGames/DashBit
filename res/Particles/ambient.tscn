@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bq2ekyqha7ss0"]
+
+[ext_resource type="Texture2D" uid="uid://dk1dc2x2402l6" path="res://Assets/PNG/Effects/Ambient_particle.png" id="1_ww3iy"]
+
+[sub_resource type="Gradient" id="Gradient_84p0a"]
+offsets = PackedFloat32Array(0, 0.653333)
+
+[node name="Ambient" type="CPUParticles2D"]
+modulate = Color(1, 1, 1, 0.615686)
+z_index = -1
+position = Vector2(360, -80)
+texture = ExtResource("1_ww3iy")
+lifetime = 1.5
+speed_scale = 0.35
+emission_shape = 3
+emission_rect_extents = Vector2(360, 1)
+direction = Vector2(0, 1)
+spread = 5.0
+gravity = Vector2(0, 300)
+initial_velocity_min = 1000.0
+initial_velocity_max = 1000.0
+scale_amount_min = 12.0
+scale_amount_max = 12.0
+color_ramp = SubResource("Gradient_84p0a")

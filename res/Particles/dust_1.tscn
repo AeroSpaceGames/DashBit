@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=3 uid="uid://s4rxl48nij5w"]
+
+[ext_resource type="Texture2D" uid="uid://m6w6bjymp4n0" path="res://Assets/PNG/UI/Shine3.png" id="1_yfmvm"]
+[ext_resource type="Script" uid="uid://dytjexvyo82hy" path="res://Scripts/Particles/dust.gd" id="2_ewefa"]
+
+[sub_resource type="Curve" id="Curve_iy5k6"]
+_limits = [-200.0, 200.0, 0.0, 1.0]
+_data = [Vector2(0, 20.224731), 0.0, 0.0, 0, 0, Vector2(1, 92.13484), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_ebpbn"]
+curve = SubResource("Curve_iy5k6")
+
+[sub_resource type="Curve" id="Curve_m5eiq"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.22222221, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_8g0gh"]
+curve = SubResource("Curve_m5eiq")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_0a2xn"]
+particle_flag_disable_z = true
+direction = Vector3(-5, 0, 0)
+initial_velocity_min = 917.07
+initial_velocity_max = 1000.0
+gravity = Vector3(0, 300, 0)
+linear_accel_min = -100.0
+linear_accel_max = -2.2351742e-06
+linear_accel_curve = SubResource("CurveTexture_ebpbn")
+scale_min = 8.0
+scale_max = 10.0
+scale_curve = SubResource("CurveTexture_8g0gh")
+
+[node name="Dust1" type="GPUParticles2D"]
+emitting = false
+amount = 3
+texture = ExtResource("1_yfmvm")
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_0a2xn")
+script = ExtResource("2_ewefa")
+
+[connection signal="finished" from="." to="." method="_on_finished"]
